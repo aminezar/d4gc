@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.env
+.env.*
+!.env.example
+
+# Source data, generated bundles and query logs
+data/
+bundles/
+gaps.jsonl

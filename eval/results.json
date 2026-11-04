@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-04",
+  "python": "3.13.5",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "bundle_sha256": "6c142d13541b7a8691e12cf2f75aff6de4a697dfd8194676581d4914cd5ffd14",
+  "bundle_metadata": {
+    "T_kw": "1.01",
+    "T_vec": "0.645",
+    "chunk_count": "11535",
+    "created": "2026-10-28T18:26:21+00:00",
+    "dims": "256",
+    "doc_count": "559",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "name": "MSF full collection",
+    "valid_until": "2027-04-28"
+  },
+  "packages": {
+    "numpy": "2.5.4",
+    "torch": "2.14.1",
+    "transformers": "5.21.0",
+    "sentence-transformers": "6.2.0",
+    "fastapi": "0.162.0"
+  },
+  "held_out_questions": 21,
+  "tuning_questions": 22,
+  "hybrid": {
+    "expected_doc_retrieved": 9,
+    "answerable_with_expected_doc": 9,
+    "correct_refusals": 9,
+    "unanswerable": 12,
+    "T_vec": 0.645,
+    "T_kw": 1.01
+  },
+  "keyword_baseline": {
+    "expected_doc_retrieved": 8,
+    "answerable_with_expected_doc": 9,
+    "correct_refusals": 4,
+    "unanswerable": 12,
+    "T_kw": 0.4
+  },
+  "notes": [
+    "Evaluation on the full challenge collection.",
+    "Stored hybrid thresholds; keyword threshold selected on the tuning split.",
+    "The challenge dataset is not included.",
+    "The original passage-embedding runtime was not recorded in this bundle."
+  ]
+}

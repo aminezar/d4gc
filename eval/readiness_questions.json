@@ -1,0 +1,14 @@
+[
+  {"id": "r01", "topic": "shipping", "query": "What are the import and customs rules for bringing medical supplies and drugs into {country}?"},
+  {"id": "r02", "topic": "drug legislation", "query": "What is the drug legislation in {country}, and which medicines need registration or special authorisation?"},
+  {"id": "r03", "topic": "water and sanitation", "query": "What is the water and sanitation situation in {country}, and what water and hygiene activities has MSF run there?"},
+  {"id": "r04", "topic": "cholera", "query": "Have there been cholera outbreaks in {country}, and how were they managed?"},
+  {"id": "r05", "topic": "vaccination", "query": "What vaccination campaigns have been carried out in {country}, and what is the vaccine coverage?"},
+  {"id": "r06", "topic": "malaria", "query": "How is malaria diagnosed and treated in {country}, and how common is it?"},
+  {"id": "r07", "topic": "malnutrition", "query": "How widespread is malnutrition among children in {country}, and how is it treated?"},
+  {"id": "r08", "topic": "security", "query": "What are the security risks for humanitarian staff and health facilities in {country}?"},
+  {"id": "r09", "topic": "mental health", "query": "What mental health and psychosocial support services exist for people affected by crisis in {country}?"},
+  {"id": "r10", "topic": "sexual violence", "query": "How is medical care for survivors of sexual violence organised in {country}?"},
+  {"id": "r11", "topic": "displacement", "query": "How many people are displaced or refugees in {country}, and what are their main health needs?"},
+  {"id": "r12", "topic": "mass casualties", "query": "How did MSF respond to mass-casualty events, attacks or bombings in {country}?"}
+]

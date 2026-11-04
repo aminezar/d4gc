@@ -1,0 +1,487 @@
+[
+  {
+    "id": "q01",
+    "query": "How can I ship this to Venezuela?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": null,
+    "note": "Organizer example. No shipping/logistics guidance for Venezuela; Venezuela only appears in financial reports and an ICC legal passage.",
+    "split": "tune"
+  },
+  {
+    "id": "q02",
+    "query": "Patient VIH qui tousse depuis trois semaines : quels examens demander pour confirmer une tuberculose pulmonaire ?",
+    "language": "fr",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "P22",
+      "P21",
+      "D9549aa0ea8"
+    ],
+    "country": "DR Congo",
+    "note": "Global TB guideline chapter (fr P22, en twin P21): Xpert MTB/RIF plus point-of-care urine LF-LAM when HIV co-infection is suspected. D9549aa0ea8 covers WHO urine LAM guidance.",
+    "split": "tune"
+  },
+  {
+    "id": "q03",
+    "query": "What is the drug legislation in Venezuela?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": null,
+    "note": "Organizer example. No Venezuelan pharmaceutical law in the collection; the only legal mention is an ICC referral (P28).",
+    "split": "test"
+  },
+  {
+    "id": "q04",
+    "query": "How many litres of Ringer's lactate does a severely dehydrated adult cholera patient need in the first three hours?",
+    "language": "en",
+    "category": "partial",
+    "expected_doc_ids": [
+      "Dc95675e997",
+      "Da4bda80d2e"
+    ],
+    "country": "DR Congo",
+    "note": "Only the table of contents and appendix pages of the cholera guideline are in the collection; the rehydration plan (volumes) is not. Cholera epidemiology papers exist but no treatment volumes.",
+    "split": "tune"
+  },
+  {
+    "id": "q05",
+    "query": "Quels documents faut-il fournir pour obtenir un visa de travail pour un expatrié en RDC ?",
+    "language": "fr",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "Visas only mentioned historically as hard to obtain (P32, Sudan case studies); no procedure.",
+    "split": "tune"
+  },
+  {
+    "id": "q06",
+    "query": "Can we get mpox vaccines for our patients in DRC yet, or are they still not available?",
+    "language": "en",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "Ddc5f4e5436"
+    ],
+    "country": "DR Congo",
+    "note": "MSF interview on mpox in DRC: two vaccines validated by DRC but none yet available at that stage.",
+    "split": "test"
+  },
+  {
+    "id": "q07",
+    "query": "ما هي إجراءات التخليص الجمركي لإدخال شحنة أدوية إلى اليمن عبر ميناء عدن؟",
+    "language": "ar",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Yemen",
+    "note": "Yemen covered clinically, but no customs/clearance procedures; no co-occurrence of customs with Yemen/Aden.",
+    "split": "test"
+  },
+  {
+    "id": "q08",
+    "query": "¿Qué requisitos exige la aduana de Perú para importar medicamentos controlados como la morfina?",
+    "language": "es",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Peru",
+    "note": "No Peru import or controlled-drug rules; morphine never co-occurs with Peru.",
+    "split": "tune"
+  },
+  {
+    "id": "q09",
+    "query": "هل يوجد لقاح معتمد يحمي من سلالة الإيبولا المنتشرة حاليًا في الكونغو الديمقراطية؟",
+    "language": "ar",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "Dac15cd638c",
+      "D5d1bb4aad4",
+      "D8bafbbfb7a",
+      "D9f045d83a6",
+      "Dd2d4a2481b",
+      "Dacd418953a",
+      "D5375e4eb66"
+    ],
+    "country": "DR Congo",
+    "note": "2026 DRC Ebola outbreak is Bundibugyo virus: the two approved Ebola vaccines are not approved for it; no approved vaccine or treatment. Interview (ar/en), press releases and statements (ar/en).",
+    "split": "tune"
+  },
+  {
+    "id": "q10",
+    "query": "What paperwork does customs at Kinshasa airport need to release a cold-chain vaccine shipment?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "No customs content for Kinshasa (zero co-occurrence).",
+    "split": "test"
+  },
+  {
+    "id": "q11",
+    "query": "Quelle dose de vitamine A faut-il donner à un nourrisson de 8 mois atteint de rougeole ?",
+    "language": "fr",
+    "category": "partial",
+    "expected_doc_ids": [
+      "D9d4ec452ad",
+      "D5e9f29a4e4",
+      "De7caf8ed52",
+      "Db006be0701"
+    ],
+    "country": "DR Congo",
+    "note": "Measles guideline intro/TOC pages (fr/en) and 'Vaccination in emergencies' (vitamin A distribution is a priority) exist, but no vitamin A dose is given anywhere.",
+    "split": "test"
+  },
+  {
+    "id": "q12",
+    "query": "Quel est le barème des salaires du personnel national MSF à Goma ?",
+    "language": "fr",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "No salary scales; 'salaire' absent, 'salary' only in passing.",
+    "split": "tune"
+  },
+  {
+    "id": "q13",
+    "query": "How wide a perimeter around a cholera patient's house should our rapid-response WASH team cover in eastern DRC?",
+    "language": "en",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "D5a8d5824d6"
+    ],
+    "country": "DR Congo",
+    "note": "Uvira (DRC) cholera clustering study: CATI radius 100-500 m proposed; findings compatible with a high-risk radius of <=500 m, elevated risk further out.",
+    "split": "test"
+  },
+  {
+    "id": "q14",
+    "query": "ما هي ساعات حظر التجول المفروضة على المنظمات الإنسانية في طرابلس بليبيا؟",
+    "language": "ar",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Libya",
+    "note": "No curfew rules for Tripoli; Libya only in migration/sea-rescue context.",
+    "split": "test"
+  },
+  {
+    "id": "q15",
+    "query": "¿Cómo se registra un medicamento nuevo ante la agencia reguladora de Bolivia?",
+    "language": "es",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Bolivia",
+    "note": "No Bolivian regulatory procedure; Bolivia only in financial/activity reports.",
+    "split": "tune"
+  },
+  {
+    "id": "q16",
+    "query": "Quelle dose d'amoxicilline pour un enfant de 15 kg qui a une pneumonie sans signe de gravité ?",
+    "language": "fr",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "P24"
+    ],
+    "country": "DR Congo",
+    "note": "Global drug sheet (English only, cross-lingual): high dosage for pneumonia, 30 mg/kg 3x/day; 12 to <25 kg = 500 mg x 3.",
+    "split": "tune"
+  },
+  {
+    "id": "q17",
+    "query": "What are the size and weight limits for cargo on UNHAS flights into Bunia?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "UNHAS / humanitarian air service never mentioned.",
+    "split": "test"
+  },
+  {
+    "id": "q18",
+    "query": "¿Qué protocolo de atención psicológica usa MSF con los migrantes venezolanos en la frontera de Cúcuta?",
+    "language": "es",
+    "category": "partial",
+    "expected_doc_ids": [
+      "D8b233f27d2",
+      "D32ea4a9d92"
+    ],
+    "country": "Colombia",
+    "note": "Related: mental health in the Americas (MH integrated in PHC for Venezuelan migrants) and 2019 report (MSF supports Venezuelan migrants in Colombia). No Cúcuta-specific protocol.",
+    "split": "tune"
+  },
+  {
+    "id": "q19",
+    "query": "Quel est le prix actuel du litre de gasoil à Bunia ?",
+    "language": "fr",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "No fuel prices; fuel never co-occurs with Bunia.",
+    "split": "tune"
+  },
+  {
+    "id": "q20",
+    "query": "¿Cuántos solicitantes de asilo atendidos por MSF en Nauru habían llegado a intentar quitarse la vida?",
+    "language": "es",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "Dcf6e6ba02b",
+      "Dbb3e40c69c",
+      "D802e76ecc1"
+    ],
+    "country": "Nauru",
+    "note": "Activity report Nauru (es/fr/en): 30% of refugees and asylum seekers had attempted suicide, 60% had considered it.",
+    "split": "test"
+  },
+  {
+    "id": "q21",
+    "query": "هل هناك تفشٍّ لحمى الضنك في سلطنة عُمان هذا العام؟",
+    "language": "ar",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Oman",
+    "note": "Oman essentially absent; no dengue in Oman.",
+    "split": "test"
+  },
+  {
+    "id": "q22",
+    "query": "¿Hay un brote de fiebre amarilla en Paraguay en este momento?",
+    "language": "es",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Paraguay",
+    "note": "Paraguay only in financial reports; yellow fever never co-occurs with it. Near-miss: yellow fever DRC 2016.",
+    "split": "tune"
+  },
+  {
+    "id": "q23",
+    "query": "Which mobile network has the best coverage around Mweso for our staff phones?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "No telecom/network coverage information (Vodacom/Airtel never mentioned).",
+    "split": "test"
+  },
+  {
+    "id": "q24",
+    "query": "A woman is bleeding heavily just after the placenta came out. What are the usual causes I should look for?",
+    "language": "en",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "P23"
+    ],
+    "country": "DR Congo",
+    "note": "Global obstetric guideline, postpartum haemorrhage: uterine atony 70%, obstetric trauma 20%, retained placenta 10%, coagulation disorders <1%.",
+    "split": "tune"
+  },
+  {
+    "id": "q25",
+    "query": "Quel est le numéro de téléphone des urgences de l'hôpital général de Bukavu ?",
+    "language": "fr",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "No phone numbers or hospital contact details for Bukavu.",
+    "split": "tune"
+  },
+  {
+    "id": "q26",
+    "query": "ما هو بروتوكول علاج سوء التغذية الحاد الوخيم لدى الرضع دون ستة أشهر في غزة؟",
+    "language": "ar",
+    "category": "partial",
+    "expected_doc_ids": [
+      "Db305b45b94"
+    ],
+    "country": "Palestine",
+    "note": "Press release on the malnutrition crisis in Gaza describes the situation, not a treatment protocol for infants under 6 months (no F-75/F-100 or SAM protocol in the collection).",
+    "split": "test"
+  },
+  {
+    "id": "q27",
+    "query": "كم يبلغ راتب الطبيب المحلي الذي يعمل مع أطباء بلا حدود في الأردن؟",
+    "language": "ar",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Jordan",
+    "note": "Financial reports give aggregate staff costs only; no individual salary levels.",
+    "split": "test"
+  },
+  {
+    "id": "q28",
+    "query": "Lors de l'épidémie de fièvre jaune de 2016 en RDC, combien de personnes MSF a-t-elle vaccinées et dans quelles villes ?",
+    "language": "fr",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "D7dbb77c873",
+      "D70431f133a"
+    ],
+    "country": "DR Congo",
+    "note": "DRC activity report (fr/en): more than one million people vaccinated in Kinshasa and Matadi (Kongo-Central).",
+    "split": "test"
+  },
+  {
+    "id": "q29",
+    "query": "¿A qué hora empieza el toque de queda en Guayaquil y qué barrios debe evitar el equipo?",
+    "language": "es",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Ecuador",
+    "note": "No security rules for Guayaquil/Ecuador.",
+    "split": "tune"
+  },
+  {
+    "id": "q30",
+    "query": "What is the current per diem rate for international staff based in Kinshasa?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "DR Congo",
+    "note": "'Per diem' only once in a historical case study; no rates.",
+    "split": "test"
+  },
+  {
+    "id": "q31",
+    "query": "ما هي المهلة القصوى بعد الاعتداء لإعطاء الناجيات من الاغتصاب الأدوية الوقائية ضد العدوى والحمل؟",
+    "language": "ar",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "D2ad107ffa2",
+      "Df35d21f1d6"
+    ],
+    "country": "Panama",
+    "note": "Darién Gap testimony (en/ar): post-rape medicines to prevent infections and unwanted pregnancy must be given within 72 hours.",
+    "split": "tune"
+  },
+  {
+    "id": "q32",
+    "query": "Quelles sont les démarches pour faire enregistrer un médicament auprès de la Direction de la pharmacie au Mali ?",
+    "language": "fr",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Mali",
+    "note": "Mali covered in activity reports; no drug registration procedure.",
+    "split": "tune"
+  },
+  {
+    "id": "q33",
+    "query": "How long do mpox patients need to stay in isolation before they can go home?",
+    "language": "en",
+    "category": "partial",
+    "expected_doc_ids": [
+      "Ddc5f4e5436"
+    ],
+    "country": "DR Congo",
+    "note": "Mpox DRC interview: transmission, supportive care, recovery within about a month, isolation support needed, but no isolation duration or discharge criteria.",
+    "split": "tune"
+  },
+  {
+    "id": "q34",
+    "query": "ما هي شروط الحصول على تصريح عمل للموظفين الدوليين في العراق؟",
+    "language": "ar",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Iraq",
+    "note": "Work permits never discussed for Iraq (only one historical mention elsewhere).",
+    "split": "test"
+  },
+  {
+    "id": "q35",
+    "query": "Did the mass antimalarial distribution rounds in the Ituri displacement sites actually reduce deaths among under-fives?",
+    "language": "en",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "D1598c72a1b"
+    ],
+    "country": "DR Congo",
+    "note": "Angumu, Ituri MDA study: under-5 mortality fell from 2.32 to 1.10/10,000/day in MDA locations, stable in non-MDA locations; lower malaria morbidity.",
+    "split": "test"
+  },
+  {
+    "id": "q36",
+    "query": "¿Cuánto cuesta enviar por mensajería una caja de reactivos de laboratorio de Bogotá a Caracas?",
+    "language": "es",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Venezuela",
+    "note": "No courier/shipping costs; near-miss of the organizer's Venezuela shipping example.",
+    "split": "tune"
+  },
+  {
+    "id": "q37",
+    "query": "Is there an active diphtheria outbreak in Mongolia right now?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Mongolia",
+    "note": "Mongolia only mentioned in access/pricing contexts; never with diphtheria.",
+    "split": "test"
+  },
+  {
+    "id": "q38",
+    "query": "¿Cómo organizó MSF la atención quirúrgica de los heridos por atentados suicidas en el norte de Camerún, cerca de la frontera con Nigeria?",
+    "language": "es",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "De76e327faa",
+      "D705b6e90b7",
+      "D00f74bcaf7"
+    ],
+    "country": "Cameroon",
+    "note": "Lake Chad activity report (es/en/fr): Mora operating theatre rehabilitated, ambulance referral to Maroua hospital, mass-casualty training and kits for MoH.",
+    "split": "tune"
+  },
+  {
+    "id": "q39",
+    "query": "What night-time movement restrictions apply to NGO vehicles in Maiduguri?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Nigeria",
+    "note": "Maiduguri appears in a flood press release; no security or curfew rules.",
+    "split": "tune"
+  },
+  {
+    "id": "q40",
+    "query": "How should we screen older adults for depression in the displacement camps around Goma?",
+    "language": "en",
+    "category": "partial",
+    "expected_doc_ids": [
+      "D35e08369e9"
+    ],
+    "country": "DR Congo",
+    "note": "Global review on mental health of older adults in humanitarian settings in LMICs; nothing specific to Goma camps or a screening tool protocol for this context.",
+    "split": "test"
+  },
+  {
+    "id": "q41",
+    "query": "Quelle est la réglementation au Burkina Faso pour importer des psychotropes comme le diazépam ?",
+    "language": "fr",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "Burkina Faso",
+    "note": "No import rules for controlled drugs in Burkina Faso.",
+    "split": "test"
+  },
+  {
+    "id": "q42",
+    "query": "Is it worth giving RUTF to under-fives for two weeks after treating their malaria, to help them put weight back on?",
+    "language": "en",
+    "category": "answerable",
+    "expected_doc_ids": [
+      "Da7bd65da54"
+    ],
+    "country": "DR Congo",
+    "note": "Katanga (DRC) randomised trial: 14 days RUTF gave more weight gain at day 14 (353 g vs 189 g) but no significant difference at day 28.",
+    "split": "test"
+  },
+  {
+    "id": "q43",
+    "query": "How much does it cost per day to rent a 4x4 with a driver in Juba?",
+    "language": "en",
+    "category": "unanswerable",
+    "expected_doc_ids": [],
+    "country": "South Sudan",
+    "note": "No vehicle rental costs; Juba never co-occurs with rent/hire.",
+    "split": "tune"
+  }
+]

@@ -1,0 +1,3298 @@
+[
+ {
+  "name": "Afghanistan",
+  "iso3": "AFG",
+  "aliases": [
+   "Afghanistan",
+   "Afganistán",
+   "أفغانستان"
+  ],
+  "weak_aliases": [
+   "Afghan",
+   "afghan",
+   "afghane",
+   "afghans",
+   "afghanes",
+   "afgano",
+   "afgana",
+   "afganos",
+   "afganas",
+   "أفغاني",
+   "الأفغاني",
+   "الأفغانية"
+  ]
+ },
+ {
+  "name": "Albania",
+  "iso3": "ALB",
+  "aliases": [
+   "Albania",
+   "Albanie",
+   "ألبانيا"
+  ],
+  "weak_aliases": [
+   "Albanian",
+   "albanais",
+   "albanaise",
+   "albanaises"
+  ]
+ },
+ {
+  "name": "Algeria",
+  "iso3": "DZA",
+  "aliases": [
+   "Algeria",
+   "Algérie",
+   "Argelia",
+   "الجزائر"
+  ],
+  "weak_aliases": [
+   "Algerian",
+   "algérien",
+   "algérienne",
+   "algériens",
+   "algériennes",
+   "argelino",
+   "argelina",
+   "argelinos",
+   "argelinas",
+   "الجزائري"
+  ]
+ },
+ {
+  "name": "Andorra",
+  "iso3": "AND",
+  "aliases": [
+   "Andorra",
+   "Andorre",
+   "أندورا"
+  ]
+ },
+ {
+  "name": "Angola",
+  "iso3": "AGO",
+  "aliases": [
+   "Angola",
+   "أنغولا"
+  ],
+  "weak_aliases": [
+   "Angolan",
+   "angolais",
+   "angolaise",
+   "angolaises",
+   "angoleño",
+   "angoleña",
+   "angoleños",
+   "angoleñas"
+  ]
+ },
+ {
+  "name": "Antigua and Barbuda",
+  "iso3": "ATG",
+  "aliases": [
+   "Antigua and Barbuda",
+   "Antigua-et-Barbuda",
+   "Antigua y Barbuda",
+   "أنتيغوا وباربودا"
+  ]
+ },
+ {
+  "name": "Argentina",
+  "iso3": "ARG",
+  "aliases": [
+   "Argentina",
+   "Argentine",
+   "الأرجنتين"
+  ],
+  "weak_aliases": [
+   "Argentinian",
+   "argentin",
+   "argentine",
+   "argentins",
+   "argentines",
+   "argentino",
+   "argentina",
+   "argentinos",
+   "argentinas"
+  ]
+ },
+ {
+  "name": "Armenia",
+  "iso3": "ARM",
+  "aliases": [
+   "Armenia",
+   "Arménie",
+   "أرمينيا"
+  ],
+  "weak_aliases": [
+   "Armenian",
+   "arménien",
+   "arménienne",
+   "arméniens",
+   "arméniennes",
+   "armenio",
+   "armenia",
+   "armenios",
+   "armenias"
+  ]
+ },
+ {
+  "name": "Australia",
+  "iso3": "AUS",
+  "aliases": [
+   "Australia",
+   "Australie",
+   "أستراليا"
+  ],
+  "weak_aliases": [
+   "Australian",
+   "australien",
+   "australienne",
+   "australiens",
+   "australiennes",
+   "australiano",
+   "australiana",
+   "australianos",
+   "australianas"
+  ]
+ },
+ {
+  "name": "Austria",
+  "iso3": "AUT",
+  "aliases": [
+   "Austria",
+   "Autriche",
+   "النمسا"
+  ],
+  "weak_aliases": [
+   "Austrian",
+   "autrichien",
+   "autrichienne",
+   "autrichiens",
+   "autrichiennes",
+   "austriaco",
+   "austriaca",
+   "austriacos",
+   "austriacas"
+  ]
+ },
+ {
+  "name": "Azerbaijan",
+  "iso3": "AZE",
+  "aliases": [
+   "Azerbaijan",
+   "Azerbaïdjan",
+   "Azerbaiyán",
+   "أذربيجان"
+  ],
+  "weak_aliases": [
+   "Azerbaijani",
+   "azerbaïdjanais",
+   "azerbaïdjanaise",
+   "azerbaïdjanaises"
+  ]
+ },
+ {
+  "name": "Bahamas",
+  "iso3": "BHS",
+  "aliases": [
+   "Bahamas",
+   "The Bahamas",
+   "جزر البهاما",
+   "البهاما"
+  ]
+ },
+ {
+  "name": "Bahrain",
+  "iso3": "BHR",
+  "aliases": [
+   "Bahrain",
+   "Bahreïn",
+   "Baréin",
+   "البحرين"
+  ],
+  "weak_aliases": [
+   "Bahraini",
+   "البحريني"
+  ]
+ },
+ {
+  "name": "Bangladesh",
+  "iso3": "BGD",
+  "aliases": [
+   "Bangladesh",
+   "بنغلاديش",
+   "بنغلادش",
+   "Cox's Bazar",
+   "Cox's Bazaar",
+   "كوكس بازار"
+  ],
+  "weak_aliases": [
+   "Bangladeshi",
+   "bangladais",
+   "bangladaise",
+   "bangladaises",
+   "bangladesí",
+   "bangladesíes"
+  ]
+ },
+ {
+  "name": "Barbados",
+  "iso3": "BRB",
+  "aliases": [
+   "Barbados",
+   "Barbade",
+   "بربادوس"
+  ]
+ },
+ {
+  "name": "Belarus",
+  "iso3": "BLR",
+  "aliases": [
+   "Belarus",
+   "Biélorussie",
+   "Bélarus",
+   "Bielorrusia",
+   "بيلاروسيا",
+   "روسيا البيضاء"
+  ],
+  "weak_aliases": [
+   "Belarusian"
+  ]
+ },
+ {
+  "name": "Belgium",
+  "iso3": "BEL",
+  "aliases": [
+   "Belgium",
+   "Belgique",
+   "Bélgica",
+   "بلجيكا"
+  ],
+  "weak_aliases": [
+   "Belgian",
+   "belge",
+   "belges",
+   "belga",
+   "belgas"
+  ]
+ },
+ {
+  "name": "Belize",
+  "iso3": "BLZ",
+  "aliases": [
+   "Belize",
+   "Belice",
+   "بليز"
+  ]
+ },
+ {
+  "name": "Benin",
+  "iso3": "BEN",
+  "aliases": [
+   "Benin",
+   "Bénin",
+   "Benín"
+  ],
+  "weak_aliases": [
+   "Beninese",
+   "béninois",
+   "béninoise",
+   "béninoises",
+   "بنين"
+  ]
+ },
+ {
+  "name": "Bhutan",
+  "iso3": "BTN",
+  "aliases": [
+   "Bhutan",
+   "Bhoutan",
+   "Bután",
+   "بوتان"
+  ]
+ },
+ {
+  "name": "Bolivia",
+  "iso3": "BOL",
+  "aliases": [
+   "Bolivia",
+   "Bolivie",
+   "بوليفيا"
+  ],
+  "weak_aliases": [
+   "Bolivian",
+   "bolivien",
+   "bolivienne",
+   "boliviens",
+   "boliviennes",
+   "boliviano",
+   "boliviana",
+   "bolivianos",
+   "bolivianas"
+  ]
+ },
+ {
+  "name": "Bosnia and Herzegovina",
+  "iso3": "BIH",
+  "aliases": [
+   "Bosnia and Herzegovina",
+   "Bosnia-Herzegovina",
+   "Bosnia",
+   "Bosnie-Herzégovine",
+   "Bosnie",
+   "Bosnia y Herzegovina",
+   "البوسنة والهرسك",
+   "البوسنة",
+   "Srebrenica"
+  ],
+  "weak_aliases": [
+   "Bosnian",
+   "bosniaque",
+   "bosniaques",
+   "bosnio",
+   "bosnia",
+   "bosnios",
+   "bosnias"
+  ]
+ },
+ {
+  "name": "Botswana",
+  "iso3": "BWA",
+  "aliases": [
+   "Botswana",
+   "بوتسوانا"
+  ]
+ },
+ {
+  "name": "Brazil",
+  "iso3": "BRA",
+  "aliases": [
+   "Brazil",
+   "Brésil",
+   "Brasil",
+   "البرازيل"
+  ],
+  "weak_aliases": [
+   "Brazilian",
+   "brésilien",
+   "brésilienne",
+   "brésiliens",
+   "brésiliennes",
+   "brasileño",
+   "brasileña",
+   "brasileños",
+   "brasileñas",
+   "البرازيلي"
+  ]
+ },
+ {
+  "name": "Brunei",
+  "iso3": "BRN",
+  "aliases": [
+   "Brunei",
+   "Brunei Darussalam",
+   "Brunéi",
+   "بروناي"
+  ]
+ },
+ {
+  "name": "Bulgaria",
+  "iso3": "BGR",
+  "aliases": [
+   "Bulgaria",
+   "Bulgarie",
+   "بلغاريا"
+  ],
+  "weak_aliases": [
+   "Bulgarian"
+  ]
+ },
+ {
+  "name": "Burkina Faso",
+  "iso3": "BFA",
+  "aliases": [
+   "Burkina Faso",
+   "Burkina",
+   "بوركينا فاسو",
+   "بوركينا فاصو"
+  ],
+  "weak_aliases": [
+   "Burkinabe",
+   "Burkinabè",
+   "burkinabè",
+   "burkinés"
+  ]
+ },
+ {
+  "name": "Burundi",
+  "iso3": "BDI",
+  "aliases": [
+   "Burundi",
+   "بوروندي",
+   "بروندي"
+  ],
+  "weak_aliases": [
+   "Burundian",
+   "burundais",
+   "burundaise",
+   "burundaises",
+   "burundés"
+  ]
+ },
+ {
+  "name": "Cabo Verde",
+  "iso3": "CPV",
+  "aliases": [
+   "Cabo Verde",
+   "Cape Verde",
+   "Cap-Vert",
+   "Cap Vert",
+   "الرأس الأخضر",
+   "كابو فيردي"
+  ],
+  "weak_aliases": [
+   "Cape Verdean",
+   "cap-verdien",
+   "cap-verdienne",
+   "cap-verdiens",
+   "cap-verdiennes",
+   "caboverdiano",
+   "caboverdiana",
+   "caboverdianos",
+   "caboverdianas"
+  ]
+ },
+ {
+  "name": "Cambodia",
+  "iso3": "KHM",
+  "aliases": [
+   "Cambodia",
+   "Cambodge",
+   "Camboya",
+   "كمبوديا"
+  ],
+  "weak_aliases": [
+   "Cambodian",
+   "cambodgien",
+   "cambodgienne",
+   "cambodgiens",
+   "cambodgiennes",
+   "camboyano",
+   "camboyana",
+   "camboyanos",
+   "camboyanas"
+  ]
+ },
+ {
+  "name": "Cameroon",
+  "iso3": "CMR",
+  "aliases": [
+   "Cameroon",
+   "Cameroun",
+   "Camerún",
+   "الكاميرون"
+  ],
+  "weak_aliases": [
+   "Cameroonian",
+   "camerounais",
+   "camerounaise",
+   "camerounaises",
+   "camerunés"
+  ]
+ },
+ {
+  "name": "Canada",
+  "iso3": "CAN",
+  "aliases": [
+   "Canada",
+   "Canadá",
+   "كندا"
+  ],
+  "weak_aliases": [
+   "Canadian",
+   "canadien",
+   "canadienne",
+   "canadiens",
+   "canadiennes",
+   "canadiense",
+   "canadienses"
+  ]
+ },
+ {
+  "name": "Central African Republic",
+  "iso3": "CAF",
+  "aliases": [
+   "Central African Republic",
+   "CAR",
+   "République centrafricaine",
+   "Centrafrique",
+   "RCA",
+   "República Centroafricana",
+   "جمهورية أفريقيا الوسطى",
+   "أفريقيا الوسطى"
+  ],
+  "weak_aliases": [
+   "Central African",
+   "centrafricain",
+   "centrafricaine",
+   "centrafricains",
+   "centrafricaines",
+   "centroafricano",
+   "centroafricana",
+   "centroafricanos",
+   "centroafricanas"
+  ]
+ },
+ {
+  "name": "Chad",
+  "iso3": "TCD",
+  "aliases": [
+   "Chad",
+   "Tchad",
+   "تشاد"
+  ],
+  "weak_aliases": [
+   "Chadian",
+   "tchadien",
+   "tchadienne",
+   "tchadiens",
+   "tchadiennes",
+   "chadiano",
+   "chadiana",
+   "chadianos",
+   "chadianas"
+  ]
+ },
+ {
+  "name": "Chile",
+  "iso3": "CHL",
+  "aliases": [
+   "Chile",
+   "Chili",
+   "تشيلي"
+  ],
+  "weak_aliases": [
+   "Chilean",
+   "chilien",
+   "chilienne",
+   "chiliens",
+   "chiliennes",
+   "chileno",
+   "chilena",
+   "chilenos",
+   "chilenas"
+  ]
+ },
+ {
+  "name": "China",
+  "iso3": "CHN",
+  "aliases": [
+   "China",
+   "Chine",
+   "People's Republic of China",
+   "الصين"
+  ],
+  "weak_aliases": [
+   "Chinese",
+   "chinois",
+   "chinoise",
+   "chinoises",
+   "chino",
+   "china",
+   "chinos",
+   "chinas",
+   "الصيني"
+  ]
+ },
+ {
+  "name": "Colombia",
+  "iso3": "COL",
+  "aliases": [
+   "Colombia",
+   "Colombie",
+   "كولومبيا"
+  ],
+  "weak_aliases": [
+   "Colombian",
+   "colombien",
+   "colombienne",
+   "colombiens",
+   "colombiennes",
+   "colombiano",
+   "colombiana",
+   "colombianos",
+   "colombianas"
+  ]
+ },
+ {
+  "name": "Comoros",
+  "iso3": "COM",
+  "aliases": [
+   "Comoros",
+   "Comores",
+   "Comoras",
+   "جزر القمر"
+  ],
+  "weak_aliases": [
+   "Comorian"
+  ]
+ },
+ {
+  "name": "Congo",
+  "iso3": "COG",
+  "aliases": [
+   "Republic of the Congo",
+   "Republic of Congo",
+   "Congo-Brazzaville",
+   "Congo Brazzaville",
+   "République du Congo",
+   "República del Congo",
+   "جمهورية الكونغو",
+   "Brazzaville"
+  ],
+  "weak_aliases": [
+   "Congo",
+   "Congolese",
+   "congolais",
+   "congolaise",
+   "congolaises",
+   "congoleño",
+   "congoleña",
+   "congoleños",
+   "congoleñas",
+   "الكونغو",
+   "الكونغولي"
+  ]
+ },
+ {
+  "name": "DR Congo",
+  "iso3": "COD",
+  "aliases": [
+   "Democratic Republic of the Congo",
+   "Democratic Republic of Congo",
+   "DR Congo",
+   "DRC",
+   "D.R. Congo",
+   "DR of Congo",
+   "Congo-Kinshasa",
+   "Congo Kinshasa",
+   "République démocratique du Congo",
+   "RD Congo",
+   "RDC",
+   "R.D. Congo",
+   "República Democrática del Congo",
+   "RD del Congo",
+   "جمهورية الكونغو الديمقراطية",
+   "الكونغو الديمقراطية",
+   "Kinshasa",
+   "North Kivu",
+   "South Kivu",
+   "Nord-Kivu",
+   "Sud-Kivu",
+   "Kivu",
+   "Ituri",
+   "Kasai",
+   "Goma",
+   "Bunia",
+   "Katanga",
+   "Tanganyika province",
+   "eastern Congo",
+   "Zaire",
+   "Zaïre",
+   "زائير",
+   "est du Congo",
+   "شمال كيفو",
+   "جنوب كيفو",
+   "كيفو",
+   "إيتوري",
+   "كينشاسا"
+  ],
+  "weak_aliases": [
+   "Congo",
+   "Congolese",
+   "congolais",
+   "congolaise",
+   "congolaises",
+   "congoleño",
+   "congoleña",
+   "congoleños",
+   "congoleñas",
+   "الكونغو",
+   "الكونغولي"
+  ]
+ },
+ {
+  "name": "Costa Rica",
+  "iso3": "CRI",
+  "aliases": [
+   "Costa Rica",
+   "كوستاريكا",
+   "كوستا ريكا"
+  ],
+  "weak_aliases": [
+   "Costa Rican",
+   "costaricien",
+   "costaricienne",
+   "costariciens",
+   "costariciennes",
+   "costarricense",
+   "costarricenses"
+  ]
+ },
+ {
+  "name": "Côte d'Ivoire",
+  "iso3": "CIV",
+  "aliases": [
+   "Côte d'Ivoire",
+   "Ivory Coast",
+   "Costa de Marfil",
+   "ساحل العاج",
+   "كوت ديفوار"
+  ],
+  "weak_aliases": [
+   "Ivorian",
+   "ivoirien",
+   "ivoirienne",
+   "ivoiriens",
+   "ivoiriennes",
+   "marfileño",
+   "marfileña",
+   "marfileños",
+   "marfileñas",
+   "الإيفواري"
+  ]
+ },
+ {
+  "name": "Croatia",
+  "iso3": "HRV",
+  "aliases": [
+   "Croatia",
+   "Croatie",
+   "Croacia",
+   "كرواتيا"
+  ],
+  "weak_aliases": [
+   "Croatian"
+  ]
+ },
+ {
+  "name": "Cuba",
+  "iso3": "CUB",
+  "aliases": [
+   "Cuba",
+   "كوبا"
+  ],
+  "weak_aliases": [
+   "Cuban",
+   "cubain",
+   "cubaine",
+   "cubains",
+   "cubaines",
+   "cubano",
+   "cubana",
+   "cubanos",
+   "cubanas"
+  ]
+ },
+ {
+  "name": "Cyprus",
+  "iso3": "CYP",
+  "aliases": [
+   "Cyprus",
+   "Chypre",
+   "Chipre",
+   "قبرص"
+  ],
+  "weak_aliases": [
+   "Cypriot"
+  ]
+ },
+ {
+  "name": "Czechia",
+  "iso3": "CZE",
+  "aliases": [
+   "Czech Republic",
+   "Czechia",
+   "République tchèque",
+   "Tchéquie",
+   "República Checa",
+   "Chequia",
+   "التشيك",
+   "جمهورية التشيك"
+  ],
+  "weak_aliases": [
+   "Czech"
+  ]
+ },
+ {
+  "name": "Denmark",
+  "iso3": "DNK",
+  "aliases": [
+   "Denmark",
+   "Danemark",
+   "Dinamarca",
+   "الدنمارك"
+  ],
+  "weak_aliases": [
+   "Danish"
+  ]
+ },
+ {
+  "name": "Djibouti",
+  "iso3": "DJI",
+  "aliases": [
+   "Djibouti",
+   "Yibuti",
+   "جيبوتي"
+  ],
+  "weak_aliases": [
+   "Djiboutian",
+   "djiboutien",
+   "djiboutienne",
+   "djiboutiens",
+   "djiboutiennes"
+  ]
+ },
+ {
+  "name": "Dominica",
+  "iso3": "DMA",
+  "aliases": [
+   "Dominica",
+   "Dominique",
+   "دومينيكا"
+  ]
+ },
+ {
+  "name": "Dominican Republic",
+  "iso3": "DOM",
+  "aliases": [
+   "Dominican Republic",
+   "République dominicaine",
+   "República Dominicana",
+   "جمهورية الدومينيكان",
+   "الدومينيكان"
+  ],
+  "weak_aliases": [
+   "dominicain",
+   "dominicaine",
+   "dominicains",
+   "dominicaines",
+   "dominicano",
+   "dominicana",
+   "dominicanos",
+   "dominicanas"
+  ]
+ },
+ {
+  "name": "Ecuador",
+  "iso3": "ECU",
+  "aliases": [
+   "Ecuador",
+   "الإكوادور"
+  ],
+  "weak_aliases": [
+   "Équateur",
+   "Ecuadorian",
+   "équatorien",
+   "équatorienne",
+   "équatoriens",
+   "équatoriennes",
+   "ecuatoriano",
+   "ecuatoriana",
+   "ecuatorianos",
+   "ecuatorianas"
+  ]
+ },
+ {
+  "name": "Egypt",
+  "iso3": "EGY",
+  "aliases": [
+   "Egypt",
+   "Égypte",
+   "Egipto",
+   "مصر"
+  ],
+  "weak_aliases": [
+   "Egyptian",
+   "égyptien",
+   "égyptienne",
+   "égyptiens",
+   "égyptiennes",
+   "egipcio",
+   "egipcia",
+   "egipcios",
+   "egipcias",
+   "المصري",
+   "مصري"
+  ]
+ },
+ {
+  "name": "El Salvador",
+  "iso3": "SLV",
+  "aliases": [
+   "El Salvador",
+   "السلفادور"
+  ],
+  "weak_aliases": [
+   "Salvadoran",
+   "salvadorien",
+   "salvadorienne",
+   "salvadoriens",
+   "salvadoriennes",
+   "salvadoreño",
+   "salvadoreña",
+   "salvadoreños",
+   "salvadoreñas"
+  ]
+ },
+ {
+  "name": "Equatorial Guinea",
+  "iso3": "GNQ",
+  "aliases": [
+   "Equatorial Guinea",
+   "Guinée équatoriale",
+   "Guinea Ecuatorial",
+   "غينيا الاستوائية"
+  ],
+  "weak_aliases": [
+   "Equatoguinean",
+   "équato-guinéen",
+   "équato-guinéenne",
+   "équato-guinéens",
+   "équato-guinéennes",
+   "ecuatoguineano",
+   "ecuatoguineana",
+   "ecuatoguineanos",
+   "ecuatoguineanas"
+  ]
+ },
+ {
+  "name": "Estonia",
+  "iso3": "EST",
+  "aliases": [
+   "Estonia",
+   "Estonie",
+   "إستونيا"
+  ],
+  "weak_aliases": [
+   "Estonian"
+  ]
+ },
+ {
+  "name": "Eritrea",
+  "iso3": "ERI",
+  "aliases": [
+   "Eritrea",
+   "Érythrée",
+   "إريتريا"
+  ],
+  "weak_aliases": [
+   "Eritrean",
+   "érythréen",
+   "érythréenne",
+   "érythréens",
+   "érythréennes",
+   "eritreo",
+   "eritrea",
+   "eritreos",
+   "eritreas",
+   "الإريتري"
+  ]
+ },
+ {
+  "name": "Eswatini",
+  "iso3": "SWZ",
+  "aliases": [
+   "Eswatini",
+   "Swaziland",
+   "Esuatini",
+   "Suazilandia",
+   "إسواتيني",
+   "سوازيلاند"
+  ],
+  "weak_aliases": [
+   "Swazi"
+  ]
+ },
+ {
+  "name": "Ethiopia",
+  "iso3": "ETH",
+  "aliases": [
+   "Ethiopia",
+   "Éthiopie",
+   "Etiopía",
+   "إثيوبيا",
+   "Tigray",
+   "Tigré",
+   "تيغراي"
+  ],
+  "weak_aliases": [
+   "Ethiopian",
+   "éthiopien",
+   "éthiopienne",
+   "éthiopiens",
+   "éthiopiennes",
+   "etíope",
+   "etíopes",
+   "الإثيوبي"
+  ]
+ },
+ {
+  "name": "Fiji",
+  "iso3": "FJI",
+  "aliases": [
+   "Fiji",
+   "Fidji",
+   "Fiyi",
+   "فيجي"
+  ],
+  "weak_aliases": [
+   "Fijian"
+  ]
+ },
+ {
+  "name": "Finland",
+  "iso3": "FIN",
+  "aliases": [
+   "Finland",
+   "Finlande",
+   "Finlandia",
+   "فنلندا"
+  ],
+  "weak_aliases": [
+   "Finnish"
+  ]
+ },
+ {
+  "name": "France",
+  "iso3": "FRA",
+  "aliases": [
+   "France",
+   "Francia",
+   "فرنسا"
+  ]
+ },
+ {
+  "name": "Gabon",
+  "iso3": "GAB",
+  "aliases": [
+   "Gabon",
+   "Gabón",
+   "الغابون"
+  ],
+  "weak_aliases": [
+   "Gabonese",
+   "gabonais",
+   "gabonaise",
+   "gabonaises"
+  ]
+ },
+ {
+  "name": "Gambia",
+  "iso3": "GMB",
+  "aliases": [
+   "Gambia",
+   "The Gambia",
+   "Gambie",
+   "غامبيا"
+  ],
+  "weak_aliases": [
+   "Gambian",
+   "gambien",
+   "gambienne",
+   "gambiens",
+   "gambiennes"
+  ]
+ },
+ {
+  "name": "Georgia",
+  "iso3": "GEO",
+  "aliases": [
+   "Georgia",
+   "Géorgie",
+   "جورجيا",
+   "Abkhazia",
+   "Abkhazie",
+   "South Ossetia"
+  ],
+  "weak_aliases": [
+   "Georgian",
+   "géorgien",
+   "géorgienne",
+   "géorgiens",
+   "géorgiennes"
+  ]
+ },
+ {
+  "name": "Germany",
+  "iso3": "DEU",
+  "aliases": [
+   "Germany",
+   "Allemagne",
+   "Alemania",
+   "ألمانيا"
+  ],
+  "weak_aliases": [
+   "German",
+   "الألماني"
+  ]
+ },
+ {
+  "name": "Ghana",
+  "iso3": "GHA",
+  "aliases": [
+   "Ghana",
+   "غانا"
+  ],
+  "weak_aliases": [
+   "Ghanaian",
+   "ghanéen",
+   "ghanéenne",
+   "ghanéens",
+   "ghanéennes",
+   "ghanés"
+  ]
+ },
+ {
+  "name": "Greece",
+  "iso3": "GRC",
+  "aliases": [
+   "Greece",
+   "Grèce",
+   "Grecia",
+   "اليونان"
+  ],
+  "weak_aliases": [
+   "grecque",
+   "griego",
+   "griega",
+   "griegos",
+   "griegas",
+   "اليوناني"
+  ]
+ },
+ {
+  "name": "Grenada",
+  "iso3": "GRD",
+  "aliases": [
+   "Grenada",
+   "غرينادا"
+  ],
+  "weak_aliases": [
+   "Grenade"
+  ]
+ },
+ {
+  "name": "Guatemala",
+  "iso3": "GTM",
+  "aliases": [
+   "Guatemala",
+   "غواتيمالا"
+  ],
+  "weak_aliases": [
+   "Guatemalan",
+   "guatémaltèque",
+   "guatémaltèques",
+   "guatemalteco",
+   "guatemalteca",
+   "guatemaltecos",
+   "guatemaltecas"
+  ]
+ },
+ {
+  "name": "Guinea",
+  "iso3": "GIN",
+  "aliases": [
+   "Guinea",
+   "Guinée",
+   "Guinea-Conakry",
+   "Guinée-Conakry",
+   "Guinea Conakry",
+   "Guinée Conakry",
+   "Conakry",
+   "غينيا",
+   "غينيا كوناكري"
+  ],
+  "weak_aliases": [
+   "Guinean",
+   "guinéen",
+   "guinéenne",
+   "guinéens",
+   "guinéennes",
+   "guineano",
+   "guineana",
+   "guineanos",
+   "guineanas",
+   "الغيني"
+  ]
+ },
+ {
+  "name": "Guinea-Bissau",
+  "iso3": "GNB",
+  "aliases": [
+   "Guinea-Bissau",
+   "Guinea Bissau",
+   "Guinée-Bissau",
+   "Guinée Bissau",
+   "غينيا بيساو",
+   "غينيا-بيساو"
+  ],
+  "weak_aliases": [
+   "Bissau-Guinean",
+   "bissau-guinéen",
+   "bissau-guinéenne",
+   "bissau-guinéens",
+   "bissau-guinéennes"
+  ]
+ },
+ {
+  "name": "Guyana",
+  "iso3": "GUY",
+  "aliases": [
+   "Guyana",
+   "غيانا",
+   "غويانا"
+  ],
+  "weak_aliases": [
+   "Guyanese"
+  ]
+ },
+ {
+  "name": "Haiti",
+  "iso3": "HTI",
+  "aliases": [
+   "Haiti",
+   "Haïti",
+   "Haití",
+   "هايتي",
+   "Port-au-Prince"
+  ],
+  "weak_aliases": [
+   "Haitian",
+   "haïtien",
+   "haïtienne",
+   "haïtiens",
+   "haïtiennes",
+   "haitiano",
+   "haitiana",
+   "haitianos",
+   "haitianas",
+   "الهايتي"
+  ]
+ },
+ {
+  "name": "Honduras",
+  "iso3": "HND",
+  "aliases": [
+   "Honduras",
+   "هندوراس"
+  ],
+  "weak_aliases": [
+   "Honduran",
+   "hondurien",
+   "hondurienne",
+   "honduriens",
+   "honduriennes",
+   "hondureño",
+   "hondureña",
+   "hondureños",
+   "hondureñas"
+  ]
+ },
+ {
+  "name": "Hungary",
+  "iso3": "HUN",
+  "aliases": [
+   "Hungary",
+   "Hongrie",
+   "Hungría",
+   "المجر",
+   "هنغاريا"
+  ],
+  "weak_aliases": [
+   "Hungarian"
+  ]
+ },
+ {
+  "name": "Iceland",
+  "iso3": "ISL",
+  "aliases": [
+   "Iceland",
+   "Islande",
+   "Islandia",
+   "آيسلندا",
+   "أيسلندا"
+  ],
+  "weak_aliases": [
+   "Icelandic"
+  ]
+ },
+ {
+  "name": "India",
+  "iso3": "IND",
+  "aliases": [
+   "India",
+   "Inde",
+   "الهند"
+  ],
+  "weak_aliases": [
+   "Indian",
+   "indien",
+   "indienne",
+   "indiens",
+   "indiennes",
+   "الهندي"
+  ]
+ },
+ {
+  "name": "Indonesia",
+  "iso3": "IDN",
+  "aliases": [
+   "Indonesia",
+   "Indonésie",
+   "إندونيسيا"
+  ],
+  "weak_aliases": [
+   "Indonesian",
+   "indonésien",
+   "indonésienne",
+   "indonésiens",
+   "indonésiennes",
+   "indonesio",
+   "indonesia",
+   "indonesios",
+   "indonesias"
+  ]
+ },
+ {
+  "name": "Iran",
+  "iso3": "IRN",
+  "aliases": [
+   "Iran",
+   "Islamic Republic of Iran",
+   "Irán",
+   "إيران"
+  ],
+  "weak_aliases": [
+   "Iranian",
+   "iranien",
+   "iranienne",
+   "iraniens",
+   "iraniennes",
+   "iraní",
+   "iraníes",
+   "الإيراني"
+  ]
+ },
+ {
+  "name": "Iraq",
+  "iso3": "IRQ",
+  "aliases": [
+   "Iraq",
+   "Irak",
+   "العراق",
+   "Mosul",
+   "Mossoul",
+   "الموصل"
+  ],
+  "weak_aliases": [
+   "Iraqi",
+   "irakien",
+   "irakienne",
+   "irakiens",
+   "irakiennes",
+   "iraquí",
+   "iraquíes",
+   "العراقي"
+  ]
+ },
+ {
+  "name": "Ireland",
+  "iso3": "IRL",
+  "aliases": [
+   "Ireland",
+   "Irlande",
+   "Irlanda",
+   "أيرلندا"
+  ],
+  "weak_aliases": [
+   "Irish"
+  ]
+ },
+ {
+  "name": "Israel",
+  "iso3": "ISR",
+  "aliases": [
+   "Israel",
+   "Israël",
+   "إسرائيل"
+  ],
+  "weak_aliases": [
+   "Israeli",
+   "israélien",
+   "israélienne",
+   "israéliens",
+   "israéliennes",
+   "israelí",
+   "israelíes",
+   "الإسرائيلي",
+   "الإسرائيلية"
+  ]
+ },
+ {
+  "name": "Italy",
+  "iso3": "ITA",
+  "aliases": [
+   "Italy",
+   "Italie",
+   "Italia",
+   "إيطاليا",
+   "Lampedusa"
+  ],
+  "weak_aliases": [
+   "Italian",
+   "italien",
+   "italienne",
+   "italiens",
+   "italiennes",
+   "italiano",
+   "italiana",
+   "italianos",
+   "italianas"
+  ]
+ },
+ {
+  "name": "Jamaica",
+  "iso3": "JAM",
+  "aliases": [
+   "Jamaica",
+   "Jamaïque",
+   "جامايكا"
+  ],
+  "weak_aliases": [
+   "Jamaican"
+  ]
+ },
+ {
+  "name": "Japan",
+  "iso3": "JPN",
+  "aliases": [
+   "Japan",
+   "Japon",
+   "Japón",
+   "اليابان"
+  ],
+  "weak_aliases": [
+   "Japanese",
+   "japonais",
+   "japonaise",
+   "japonaises",
+   "japonés",
+   "الياباني"
+  ]
+ },
+ {
+  "name": "Jordan",
+  "iso3": "JOR",
+  "aliases": [
+   "Jordan",
+   "Jordanie",
+   "Jordania",
+   "الأردن",
+   "Zaatari",
+   "Za'atari",
+   "الزعتري"
+  ],
+  "weak_aliases": [
+   "Jordanian",
+   "jordanien",
+   "jordanienne",
+   "jordaniens",
+   "jordaniennes",
+   "jordano",
+   "jordana",
+   "jordanos",
+   "jordanas",
+   "الأردني"
+  ]
+ },
+ {
+  "name": "Kazakhstan",
+  "iso3": "KAZ",
+  "aliases": [
+   "Kazakhstan",
+   "Kazajistán",
+   "Kazajstán",
+   "كازاخستان"
+  ],
+  "weak_aliases": [
+   "Kazakh"
+  ]
+ },
+ {
+  "name": "Kenya",
+  "iso3": "KEN",
+  "aliases": [
+   "Kenya",
+   "Kenia",
+   "كينيا",
+   "Dadaab",
+   "Kakuma"
+  ],
+  "weak_aliases": [
+   "Kenyan",
+   "kényan",
+   "kényane",
+   "kényans",
+   "kényanes",
+   "keniano",
+   "keniana",
+   "kenianos",
+   "kenianas",
+   "الكيني"
+  ]
+ },
+ {
+  "name": "Kiribati",
+  "iso3": "KIR",
+  "aliases": [
+   "Kiribati",
+   "كيريباتي"
+  ]
+ },
+ {
+  "name": "North Korea",
+  "iso3": "PRK",
+  "aliases": [
+   "North Korea",
+   "Democratic People's Republic of Korea",
+   "DPRK",
+   "Corée du Nord",
+   "Corea del Norte",
+   "كوريا الشمالية"
+  ],
+  "weak_aliases": [
+   "Korea",
+   "Corée",
+   "Corea",
+   "كوريا",
+   "North Korean"
+  ]
+ },
+ {
+  "name": "South Korea",
+  "iso3": "KOR",
+  "aliases": [
+   "South Korea",
+   "Republic of Korea",
+   "Corée du Sud",
+   "Corea del Sur",
+   "كوريا الجنوبية"
+  ],
+  "weak_aliases": [
+   "Korea",
+   "Corée",
+   "Corea",
+   "كوريا",
+   "South Korean"
+  ]
+ },
+ {
+  "name": "Kuwait",
+  "iso3": "KWT",
+  "aliases": [
+   "Kuwait",
+   "Koweït",
+   "الكويت"
+  ],
+  "weak_aliases": [
+   "Kuwaiti"
+  ]
+ },
+ {
+  "name": "Kyrgyzstan",
+  "iso3": "KGZ",
+  "aliases": [
+   "Kyrgyzstan",
+   "Kirghizistan",
+   "Kirguistán",
+   "Kyrgyz Republic",
+   "قيرغيزستان",
+   "قرغيزستان"
+  ],
+  "weak_aliases": [
+   "Kyrgyz"
+  ]
+ },
+ {
+  "name": "Laos",
+  "iso3": "LAO",
+  "aliases": [
+   "Laos",
+   "Lao PDR",
+   "Lao People's Democratic Republic",
+   "لاوس"
+  ]
+ },
+ {
+  "name": "Latvia",
+  "iso3": "LVA",
+  "aliases": [
+   "Latvia",
+   "Lettonie",
+   "Letonia",
+   "لاتفيا"
+  ],
+  "weak_aliases": [
+   "Latvian"
+  ]
+ },
+ {
+  "name": "Lebanon",
+  "iso3": "LBN",
+  "aliases": [
+   "Lebanon",
+   "Liban",
+   "Líbano",
+   "لبنان",
+   "Beirut",
+   "Beyrouth",
+   "بيروت",
+   "Bekaa",
+   "Beqaa"
+  ],
+  "weak_aliases": [
+   "Lebanese",
+   "libanais",
+   "libanaise",
+   "libanaises",
+   "libanés",
+   "اللبناني"
+  ]
+ },
+ {
+  "name": "Lesotho",
+  "iso3": "LSO",
+  "aliases": [
+   "Lesotho",
+   "Lesoto",
+   "ليسوتو"
+  ],
+  "weak_aliases": [
+   "Basotho"
+  ]
+ },
+ {
+  "name": "Liberia",
+  "iso3": "LBR",
+  "aliases": [
+   "Liberia",
+   "Libéria",
+   "ليبيريا",
+   "Monrovia"
+  ],
+  "weak_aliases": [
+   "Liberian",
+   "libérien",
+   "libérienne",
+   "libériens",
+   "libériennes",
+   "liberiano",
+   "liberiana",
+   "liberianos",
+   "liberianas"
+  ]
+ },
+ {
+  "name": "Libya",
+  "iso3": "LBY",
+  "aliases": [
+   "Libya",
+   "Libye",
+   "Libia",
+   "ليبيا"
+  ],
+  "weak_aliases": [
+   "Libyan",
+   "libyen",
+   "libyenne",
+   "libyens",
+   "libyennes",
+   "libio",
+   "libia",
+   "libios",
+   "libias",
+   "الليبي"
+  ]
+ },
+ {
+  "name": "Liechtenstein",
+  "iso3": "LIE",
+  "aliases": [
+   "Liechtenstein",
+   "ليختنشتاين"
+  ]
+ },
+ {
+  "name": "Lithuania",
+  "iso3": "LTU",
+  "aliases": [
+   "Lithuania",
+   "Lituanie",
+   "Lituania",
+   "ليتوانيا"
+  ],
+  "weak_aliases": [
+   "Lithuanian"
+  ]
+ },
+ {
+  "name": "Luxembourg",
+  "iso3": "LUX",
+  "aliases": [
+   "Luxembourg",
+   "Luxemburgo",
+   "لوكسمبورغ"
+  ]
+ },
+ {
+  "name": "Madagascar",
+  "iso3": "MDG",
+  "aliases": [
+   "Madagascar",
+   "مدغشقر"
+  ],
+  "weak_aliases": [
+   "Malagasy",
+   "malgache",
+   "malgaches"
+  ]
+ },
+ {
+  "name": "Malawi",
+  "iso3": "MWI",
+  "aliases": [
+   "Malawi",
+   "Malaui",
+   "مالاوي",
+   "ملاوي"
+  ],
+  "weak_aliases": [
+   "Malawian",
+   "malawite",
+   "malawites"
+  ]
+ },
+ {
+  "name": "Malaysia",
+  "iso3": "MYS",
+  "aliases": [
+   "Malaysia",
+   "Malaisie",
+   "Malasia",
+   "ماليزيا"
+  ],
+  "weak_aliases": [
+   "Malaysian",
+   "malaisien",
+   "malaisienne",
+   "malaisiens",
+   "malaisiennes",
+   "malasio",
+   "malasia",
+   "malasios",
+   "malasias"
+  ]
+ },
+ {
+  "name": "Maldives",
+  "iso3": "MDV",
+  "aliases": [
+   "Maldives",
+   "Maldivas",
+   "جزر المالديف",
+   "المالديف"
+  ]
+ },
+ {
+  "name": "Mali",
+  "iso3": "MLI",
+  "aliases": [
+   "Mali",
+   "Malí",
+   "جمهورية مالي"
+  ],
+  "weak_aliases": [
+   "مالي",
+   "Malian",
+   "malien",
+   "malienne",
+   "maliens",
+   "maliennes",
+   "maliense",
+   "malienses"
+  ]
+ },
+ {
+  "name": "Malta",
+  "iso3": "MLT",
+  "aliases": [
+   "Malta",
+   "Malte",
+   "مالطا"
+  ],
+  "weak_aliases": [
+   "Maltese"
+  ]
+ },
+ {
+  "name": "Marshall Islands",
+  "iso3": "MHL",
+  "aliases": [
+   "Marshall Islands",
+   "Îles Marshall",
+   "Islas Marshall",
+   "جزر مارشال"
+  ]
+ },
+ {
+  "name": "Mauritania",
+  "iso3": "MRT",
+  "aliases": [
+   "Mauritania",
+   "Mauritanie",
+   "موريتانيا"
+  ],
+  "weak_aliases": [
+   "Mauritanian",
+   "mauritanien",
+   "mauritanienne",
+   "mauritaniens",
+   "mauritaniennes",
+   "mauritano",
+   "mauritana",
+   "mauritanos",
+   "mauritanas"
+  ]
+ },
+ {
+  "name": "Mauritius",
+  "iso3": "MUS",
+  "aliases": [
+   "Mauritius",
+   "Île Maurice",
+   "موريشيوس"
+  ]
+ },
+ {
+  "name": "Mexico",
+  "iso3": "MEX",
+  "aliases": [
+   "Mexico",
+   "Mexique",
+   "México",
+   "Méjico",
+   "المكسيك"
+  ],
+  "weak_aliases": [
+   "Mexican",
+   "mexicain",
+   "mexicaine",
+   "mexicains",
+   "mexicaines",
+   "mexicano",
+   "mexicana",
+   "mexicanos",
+   "mexicanas"
+  ]
+ },
+ {
+  "name": "Micronesia",
+  "iso3": "FSM",
+  "aliases": [
+   "Micronesia",
+   "Federated States of Micronesia",
+   "Micronésie",
+   "ميكرونيزيا"
+  ]
+ },
+ {
+  "name": "Moldova",
+  "iso3": "MDA",
+  "aliases": [
+   "Moldova",
+   "Republic of Moldova",
+   "Moldavie",
+   "Moldavia",
+   "مولدوفا"
+  ],
+  "weak_aliases": [
+   "Moldovan"
+  ]
+ },
+ {
+  "name": "Monaco",
+  "iso3": "MCO",
+  "aliases": [
+   "Monaco",
+   "Mónaco",
+   "موناكو"
+  ]
+ },
+ {
+  "name": "Mongolia",
+  "iso3": "MNG",
+  "aliases": [
+   "Mongolia",
+   "Mongolie",
+   "منغوليا"
+  ],
+  "weak_aliases": [
+   "Mongolian"
+  ]
+ },
+ {
+  "name": "Montenegro",
+  "iso3": "MNE",
+  "aliases": [
+   "Montenegro",
+   "Monténégro",
+   "الجبل الأسود"
+  ]
+ },
+ {
+  "name": "Morocco",
+  "iso3": "MAR",
+  "aliases": [
+   "Morocco",
+   "Maroc",
+   "Marruecos",
+   "المغرب"
+  ],
+  "weak_aliases": [
+   "Moroccan",
+   "marocain",
+   "marocaine",
+   "marocains",
+   "marocaines",
+   "marroquí",
+   "marroquíes",
+   "المغربي"
+  ]
+ },
+ {
+  "name": "Mozambique",
+  "iso3": "MOZ",
+  "aliases": [
+   "Mozambique",
+   "Moçambique",
+   "موزمبيق",
+   "Cabo Delgado"
+  ],
+  "weak_aliases": [
+   "Mozambican",
+   "mozambicain",
+   "mozambicaine",
+   "mozambicains",
+   "mozambicaines",
+   "mozambiqueño",
+   "mozambiqueña",
+   "mozambiqueños",
+   "mozambiqueñas"
+  ]
+ },
+ {
+  "name": "Myanmar",
+  "iso3": "MMR",
+  "aliases": [
+   "Myanmar",
+   "Burma",
+   "Birmanie",
+   "Birmania",
+   "ميانمار",
+   "بورما",
+   "Rakhine",
+   "راخين"
+  ],
+  "weak_aliases": [
+   "Burmese",
+   "birman",
+   "birmane",
+   "birmans",
+   "birmanes"
+  ]
+ },
+ {
+  "name": "Namibia",
+  "iso3": "NAM",
+  "aliases": [
+   "Namibia",
+   "Namibie",
+   "ناميبيا"
+  ],
+  "weak_aliases": [
+   "Namibian"
+  ]
+ },
+ {
+  "name": "Nauru",
+  "iso3": "NRU",
+  "aliases": [
+   "Nauru",
+   "ناورو"
+  ],
+  "weak_aliases": [
+   "Nauruan",
+   "nauruan",
+   "nauruane",
+   "nauruans",
+   "nauruanes",
+   "nauruano",
+   "nauruana",
+   "nauruanos",
+   "nauruanas"
+  ]
+ },
+ {
+  "name": "Nepal",
+  "iso3": "NPL",
+  "aliases": [
+   "Nepal",
+   "Népal",
+   "نيبال"
+  ],
+  "weak_aliases": [
+   "Nepali",
+   "Nepalese",
+   "népalais",
+   "népalaise",
+   "népalaises",
+   "nepalí"
+  ]
+ },
+ {
+  "name": "Netherlands",
+  "iso3": "NLD",
+  "aliases": [
+   "Netherlands",
+   "The Netherlands",
+   "Holland",
+   "Pays-Bas",
+   "Países Bajos",
+   "Holanda",
+   "هولندا"
+  ],
+  "weak_aliases": [
+   "Dutch",
+   "néerlandais",
+   "néerlandaise",
+   "néerlandaises"
+  ]
+ },
+ {
+  "name": "New Zealand",
+  "iso3": "NZL",
+  "aliases": [
+   "New Zealand",
+   "Nouvelle-Zélande",
+   "Nueva Zelanda",
+   "نيوزيلندا"
+  ]
+ },
+ {
+  "name": "Nicaragua",
+  "iso3": "NIC",
+  "aliases": [
+   "Nicaragua",
+   "نيكاراغوا"
+  ],
+  "weak_aliases": [
+   "Nicaraguan",
+   "nicaraguayen",
+   "nicaraguayenne",
+   "nicaraguayens",
+   "nicaraguayennes",
+   "nicaragüense",
+   "nicaragüenses"
+  ]
+ },
+ {
+  "name": "Niger",
+  "iso3": "NER",
+  "aliases": [
+   "Niger",
+   "Níger",
+   "النيجر"
+  ],
+  "weak_aliases": [
+   "Nigerien",
+   "nigérien",
+   "nigérienne",
+   "nigériens",
+   "nigériennes",
+   "nigerino",
+   "nigerina",
+   "nigerinos",
+   "nigerinas"
+  ]
+ },
+ {
+  "name": "Nigeria",
+  "iso3": "NGA",
+  "aliases": [
+   "Nigeria",
+   "Nigéria",
+   "نيجيريا",
+   "Borno",
+   "Niger Delta",
+   "Maiduguri",
+   "Zamfara",
+   "Katsina"
+  ],
+  "weak_aliases": [
+   "Nigerian",
+   "nigérian",
+   "nigériane",
+   "nigérians",
+   "nigérianes",
+   "nigeriano",
+   "nigeriana",
+   "nigerianos",
+   "nigerianas",
+   "النيجيري"
+  ]
+ },
+ {
+  "name": "North Macedonia",
+  "iso3": "MKD",
+  "aliases": [
+   "North Macedonia",
+   "Macedonia",
+   "Macédoine du Nord",
+   "Macédoine",
+   "Macedonia del Norte",
+   "مقدونيا الشمالية",
+   "مقدونيا"
+  ],
+  "weak_aliases": [
+   "Macedonian"
+  ]
+ },
+ {
+  "name": "Norway",
+  "iso3": "NOR",
+  "aliases": [
+   "Norway",
+   "Norvège",
+   "Noruega",
+   "النرويج"
+  ],
+  "weak_aliases": [
+   "Norwegian"
+  ]
+ },
+ {
+  "name": "Oman",
+  "iso3": "OMN",
+  "aliases": [
+   "Oman",
+   "Omán",
+   "سلطنة عمان"
+  ],
+  "weak_aliases": [
+   "عمان",
+   "Omani"
+  ]
+ },
+ {
+  "name": "Pakistan",
+  "iso3": "PAK",
+  "aliases": [
+   "Pakistan",
+   "Pakistán",
+   "باكستان"
+  ],
+  "weak_aliases": [
+   "Pakistani",
+   "pakistanais",
+   "pakistanaise",
+   "pakistanaises",
+   "paquistaní",
+   "الباكستاني"
+  ]
+ },
+ {
+  "name": "Palau",
+  "iso3": "PLW",
+  "aliases": [
+   "Palau",
+   "Palaos",
+   "بالاو"
+  ]
+ },
+ {
+  "name": "Panama",
+  "iso3": "PAN",
+  "aliases": [
+   "Panama",
+   "Panamá",
+   "بنما",
+   "Darién"
+  ],
+  "weak_aliases": [
+   "Panamanian",
+   "panaméen",
+   "panaméenne",
+   "panaméens",
+   "panaméennes",
+   "panameño",
+   "panameña",
+   "panameños",
+   "panameñas"
+  ]
+ },
+ {
+  "name": "Papua New Guinea",
+  "iso3": "PNG",
+  "aliases": [
+   "Papua New Guinea",
+   "PNG",
+   "Papouasie-Nouvelle-Guinée",
+   "Papúa Nueva Guinea",
+   "Papua Nueva Guinea",
+   "بابوا غينيا الجديدة"
+  ],
+  "weak_aliases": [
+   "Papua New Guinean"
+  ]
+ },
+ {
+  "name": "Paraguay",
+  "iso3": "PRY",
+  "aliases": [
+   "Paraguay",
+   "باراغواي"
+  ],
+  "weak_aliases": [
+   "Paraguayan"
+  ]
+ },
+ {
+  "name": "Peru",
+  "iso3": "PER",
+  "aliases": [
+   "Peru",
+   "Pérou",
+   "Perú",
+   "بيرو"
+  ],
+  "weak_aliases": [
+   "Peruvian",
+   "péruvien",
+   "péruvienne",
+   "péruviens",
+   "péruviennes",
+   "peruano",
+   "peruana",
+   "peruanos",
+   "peruanas"
+  ]
+ },
+ {
+  "name": "Philippines",
+  "iso3": "PHL",
+  "aliases": [
+   "Philippines",
+   "Filipinas",
+   "الفلبين"
+  ],
+  "weak_aliases": [
+   "Filipino",
+   "philippin",
+   "philippine",
+   "philippins",
+   "philippines",
+   "filipino",
+   "filipina",
+   "filipinos",
+   "filipinas"
+  ]
+ },
+ {
+  "name": "Poland",
+  "iso3": "POL",
+  "aliases": [
+   "Poland",
+   "Pologne",
+   "Polonia",
+   "بولندا"
+  ],
+  "weak_aliases": [
+   "polonais",
+   "polonaise",
+   "polonaises"
+  ]
+ },
+ {
+  "name": "Portugal",
+  "iso3": "PRT",
+  "aliases": [
+   "Portugal",
+   "البرتغال"
+  ]
+ },
+ {
+  "name": "Qatar",
+  "iso3": "QAT",
+  "aliases": [
+   "Qatar",
+   "Catar",
+   "قطر"
+  ],
+  "weak_aliases": [
+   "Qatari"
+  ]
+ },
+ {
+  "name": "Romania",
+  "iso3": "ROU",
+  "aliases": [
+   "Romania",
+   "Roumanie",
+   "Rumania",
+   "Rumanía",
+   "رومانيا"
+  ],
+  "weak_aliases": [
+   "Romanian"
+  ]
+ },
+ {
+  "name": "Russia",
+  "iso3": "RUS",
+  "aliases": [
+   "Russia",
+   "Russian Federation",
+   "Russie",
+   "Fédération de Russie",
+   "Rusia",
+   "Federación de Rusia",
+   "روسيا",
+   "روسيا الاتحادية",
+   "Chechnya",
+   "Tchétchénie"
+  ],
+  "weak_aliases": [
+   "Russian",
+   "الروسي"
+  ]
+ },
+ {
+  "name": "Rwanda",
+  "iso3": "RWA",
+  "aliases": [
+   "Rwanda",
+   "Ruanda",
+   "رواندا"
+  ],
+  "weak_aliases": [
+   "Rwandan",
+   "rwandais",
+   "rwandaise",
+   "rwandaises",
+   "ruandés"
+  ]
+ },
+ {
+  "name": "Saint Kitts and Nevis",
+  "iso3": "KNA",
+  "aliases": [
+   "Saint Kitts and Nevis",
+   "St Kitts and Nevis",
+   "Saint-Christophe-et-Niévès",
+   "San Cristóbal y Nieves",
+   "سانت كيتس ونيفيس"
+  ]
+ },
+ {
+  "name": "Saint Lucia",
+  "iso3": "LCA",
+  "aliases": [
+   "Saint Lucia",
+   "St Lucia",
+   "Sainte-Lucie",
+   "Santa Lucía",
+   "سانت لوسيا"
+  ]
+ },
+ {
+  "name": "Saint Vincent and the Grenadines",
+  "iso3": "VCT",
+  "aliases": [
+   "Saint Vincent and the Grenadines",
+   "St Vincent and the Grenadines",
+   "Saint-Vincent-et-les-Grenadines",
+   "San Vicente y las Granadinas",
+   "سانت فنسنت والغرينادين"
+  ]
+ },
+ {
+  "name": "Samoa",
+  "iso3": "WSM",
+  "aliases": [
+   "Samoa",
+   "ساموا"
+  ]
+ },
+ {
+  "name": "San Marino",
+  "iso3": "SMR",
+  "aliases": [
+   "San Marino",
+   "Saint-Marin",
+   "سان مارينو"
+  ]
+ },
+ {
+  "name": "Sao Tome and Principe",
+  "iso3": "STP",
+  "aliases": [
+   "Sao Tome and Principe",
+   "São Tomé and Príncipe",
+   "Sao Tomé-et-Principe",
+   "Santo Tomé y Príncipe",
+   "ساو تومي وبرينسيبي"
+  ]
+ },
+ {
+  "name": "Saudi Arabia",
+  "iso3": "SAU",
+  "aliases": [
+   "Saudi Arabia",
+   "Arabie saoudite",
+   "Arabia Saudita",
+   "Arabia Saudí",
+   "السعودية",
+   "المملكة العربية السعودية"
+  ],
+  "weak_aliases": [
+   "Saudi",
+   "saoudien",
+   "saoudienne",
+   "saoudiens",
+   "saoudiennes",
+   "saudí",
+   "saudíes",
+   "السعودي"
+  ]
+ },
+ {
+  "name": "Senegal",
+  "iso3": "SEN",
+  "aliases": [
+   "Senegal",
+   "Sénégal",
+   "السنغال"
+  ],
+  "weak_aliases": [
+   "Senegalese",
+   "sénégalais",
+   "sénégalaise",
+   "sénégalaises",
+   "senegalés"
+  ]
+ },
+ {
+  "name": "Serbia",
+  "iso3": "SRB",
+  "aliases": [
+   "Serbia",
+   "Serbie",
+   "صربيا"
+  ],
+  "weak_aliases": [
+   "Serbian"
+  ]
+ },
+ {
+  "name": "Seychelles",
+  "iso3": "SYC",
+  "aliases": [
+   "Seychelles",
+   "سيشل"
+  ]
+ },
+ {
+  "name": "Sierra Leone",
+  "iso3": "SLE",
+  "aliases": [
+   "Sierra Leone",
+   "Sierra Leona",
+   "سيراليون",
+   "سيرا ليون",
+   "Freetown"
+  ],
+  "weak_aliases": [
+   "Sierra Leonean",
+   "sierra-léonais",
+   "sierra-léonaise",
+   "sierra-léonaises"
+  ]
+ },
+ {
+  "name": "Singapore",
+  "iso3": "SGP",
+  "aliases": [
+   "Singapore",
+   "Singapour",
+   "Singapur",
+   "سنغافورة"
+  ]
+ },
+ {
+  "name": "Slovakia",
+  "iso3": "SVK",
+  "aliases": [
+   "Slovakia",
+   "Slovaquie",
+   "Eslovaquia",
+   "سلوفاكيا"
+  ],
+  "weak_aliases": [
+   "Slovak"
+  ]
+ },
+ {
+  "name": "Slovenia",
+  "iso3": "SVN",
+  "aliases": [
+   "Slovenia",
+   "Slovénie",
+   "Eslovenia",
+   "سلوفينيا"
+  ],
+  "weak_aliases": [
+   "Slovenian"
+  ]
+ },
+ {
+  "name": "Solomon Islands",
+  "iso3": "SLB",
+  "aliases": [
+   "Solomon Islands",
+   "Îles Salomon",
+   "Islas Salomón",
+   "جزر سليمان"
+  ]
+ },
+ {
+  "name": "Somalia",
+  "iso3": "SOM",
+  "aliases": [
+   "Somalia",
+   "Somalie",
+   "الصومال",
+   "Mogadishu",
+   "Mogadiscio",
+   "مقديشو"
+  ],
+  "weak_aliases": [
+   "Somali",
+   "somalien",
+   "somalienne",
+   "somaliens",
+   "somaliennes",
+   "somalí",
+   "somalíes",
+   "الصومالي"
+  ]
+ },
+ {
+  "name": "Somaliland",
+  "iso3": "SOL",
+  "aliases": [
+   "Somaliland",
+   "Somalilandia",
+   "أرض الصومال",
+   "صوماليلاند",
+   "Hargeisa"
+  ]
+ },
+ {
+  "name": "South Africa",
+  "iso3": "ZAF",
+  "aliases": [
+   "South Africa",
+   "Afrique du Sud",
+   "Sudáfrica",
+   "جنوب أفريقيا",
+   "Khayelitsha"
+  ],
+  "weak_aliases": [
+   "South African",
+   "sud-africain",
+   "sud-africaine",
+   "sud-africains",
+   "sud-africaines",
+   "sudafricano",
+   "sudafricana",
+   "sudafricanos",
+   "sudafricanas"
+  ]
+ },
+ {
+  "name": "South Sudan",
+  "iso3": "SSD",
+  "aliases": [
+   "South Sudan",
+   "Soudan du Sud",
+   "Sud-Soudan",
+   "Sudán del Sur",
+   "جنوب السودان",
+   "Juba",
+   "Bentiu",
+   "Malakal"
+  ],
+  "weak_aliases": [
+   "South Sudanese",
+   "sud-soudanais",
+   "sud-soudanaise",
+   "sud-soudanaises",
+   "sursudanés"
+  ]
+ },
+ {
+  "name": "Spain",
+  "iso3": "ESP",
+  "aliases": [
+   "Spain",
+   "Espagne",
+   "España",
+   "إسبانيا"
+  ]
+ },
+ {
+  "name": "Sri Lanka",
+  "iso3": "LKA",
+  "aliases": [
+   "Sri Lanka",
+   "سريلانكا",
+   "سري لانكا"
+  ],
+  "weak_aliases": [
+   "Sri Lankan"
+  ]
+ },
+ {
+  "name": "Sudan",
+  "iso3": "SDN",
+  "aliases": [
+   "Sudan",
+   "Soudan",
+   "Sudán",
+   "السودان",
+   "Darfur",
+   "دارفور",
+   "Khartoum",
+   "Jartum",
+   "الخرطوم"
+  ],
+  "weak_aliases": [
+   "Sudanese",
+   "soudanais",
+   "soudanaise",
+   "soudanaises",
+   "sudanés",
+   "السوداني"
+  ]
+ },
+ {
+  "name": "Suriname",
+  "iso3": "SUR",
+  "aliases": [
+   "Suriname",
+   "Surinam",
+   "سورينام"
+  ]
+ },
+ {
+  "name": "Sweden",
+  "iso3": "SWE",
+  "aliases": [
+   "Sweden",
+   "Suède",
+   "Suecia",
+   "السويد"
+  ],
+  "weak_aliases": [
+   "Swedish"
+  ]
+ },
+ {
+  "name": "Switzerland",
+  "iso3": "CHE",
+  "aliases": [
+   "Switzerland",
+   "Suisse",
+   "Suiza",
+   "سويسرا"
+  ],
+  "weak_aliases": [
+   "Swiss"
+  ]
+ },
+ {
+  "name": "Syria",
+  "iso3": "SYR",
+  "aliases": [
+   "Syria",
+   "Syrian Arab Republic",
+   "Syrie",
+   "Siria",
+   "سوريا",
+   "سورية",
+   "الجمهورية العربية السورية",
+   "Idlib",
+   "إدلب",
+   "Aleppo",
+   "Alep",
+   "حلب"
+  ],
+  "weak_aliases": [
+   "Syrian",
+   "syrien",
+   "syrienne",
+   "syriens",
+   "syriennes",
+   "sirio",
+   "siria",
+   "sirios",
+   "sirias",
+   "السوري",
+   "السورية",
+   "السوريين"
+  ]
+ },
+ {
+  "name": "Taiwan",
+  "iso3": "TWN",
+  "aliases": [
+   "Taiwan",
+   "Taïwan",
+   "Taiwán",
+   "تايوان"
+  ],
+  "weak_aliases": [
+   "Taiwanese"
+  ]
+ },
+ {
+  "name": "Tajikistan",
+  "iso3": "TJK",
+  "aliases": [
+   "Tajikistan",
+   "Tadjikistan",
+   "Tayikistán",
+   "طاجيكستان"
+  ],
+  "weak_aliases": [
+   "Tajik"
+  ]
+ },
+ {
+  "name": "Tanzania",
+  "iso3": "TZA",
+  "aliases": [
+   "Tanzania",
+   "United Republic of Tanzania",
+   "Tanzanie",
+   "تنزانيا"
+  ],
+  "weak_aliases": [
+   "Tanzanian",
+   "tanzanien",
+   "tanzanienne",
+   "tanzaniens",
+   "tanzaniennes",
+   "tanzano",
+   "tanzana",
+   "tanzanos",
+   "tanzanas"
+  ]
+ },
+ {
+  "name": "Thailand",
+  "iso3": "THA",
+  "aliases": [
+   "Thailand",
+   "Thaïlande",
+   "Tailandia",
+   "تايلاند"
+  ],
+  "weak_aliases": [
+   "Thai",
+   "thaïlandais",
+   "thaïlandaise",
+   "thaïlandaises",
+   "tailandés"
+  ]
+ },
+ {
+  "name": "Timor-Leste",
+  "iso3": "TLS",
+  "aliases": [
+   "Timor-Leste",
+   "East Timor",
+   "Timor Leste",
+   "Timor oriental",
+   "تيمور الشرقية",
+   "تيمور ليشتي"
+  ]
+ },
+ {
+  "name": "Togo",
+  "iso3": "TGO",
+  "aliases": [
+   "Togo",
+   "توغو",
+   "توجو"
+  ],
+  "weak_aliases": [
+   "Togolese",
+   "togolais",
+   "togolaise",
+   "togolaises"
+  ]
+ },
+ {
+  "name": "Tonga",
+  "iso3": "TON",
+  "aliases": [
+   "Tonga",
+   "تونغا"
+  ]
+ },
+ {
+  "name": "Trinidad and Tobago",
+  "iso3": "TTO",
+  "aliases": [
+   "Trinidad and Tobago",
+   "Trinité-et-Tobago",
+   "Trinidad y Tobago",
+   "ترينيداد وتوباغو"
+  ]
+ },
+ {
+  "name": "Tunisia",
+  "iso3": "TUN",
+  "aliases": [
+   "Tunisia",
+   "Tunisie",
+   "Túnez",
+   "تونس"
+  ],
+  "weak_aliases": [
+   "Tunisian",
+   "tunisien",
+   "tunisienne",
+   "tunisiens",
+   "tunisiennes",
+   "tunecino",
+   "tunecina",
+   "tunecinos",
+   "tunecinas",
+   "التونسي"
+  ]
+ },
+ {
+  "name": "Turkey",
+  "iso3": "TUR",
+  "aliases": [
+   "Turkey",
+   "Türkiye",
+   "Turkiye",
+   "Turquie",
+   "Turquía",
+   "تركيا"
+  ],
+  "weak_aliases": [
+   "Turkish",
+   "turco",
+   "turca",
+   "turcos",
+   "turcas",
+   "التركي"
+  ]
+ },
+ {
+  "name": "Turkmenistan",
+  "iso3": "TKM",
+  "aliases": [
+   "Turkmenistan",
+   "Turkménistan",
+   "Turkmenistán",
+   "تركمانستان"
+  ],
+  "weak_aliases": [
+   "Turkmen"
+  ]
+ },
+ {
+  "name": "Tuvalu",
+  "iso3": "TUV",
+  "aliases": [
+   "Tuvalu",
+   "توفالو"
+  ]
+ },
+ {
+  "name": "Uganda",
+  "iso3": "UGA",
+  "aliases": [
+   "Uganda",
+   "Ouganda",
+   "أوغندا"
+  ],
+  "weak_aliases": [
+   "Ugandan",
+   "ougandais",
+   "ougandaise",
+   "ougandaises",
+   "ugandés"
+  ]
+ },
+ {
+  "name": "Ukraine",
+  "iso3": "UKR",
+  "aliases": [
+   "Ukraine",
+   "Ucrania",
+   "أوكرانيا",
+   "Donbas",
+   "Donbass",
+   "Kharkiv",
+   "Mariupol"
+  ],
+  "weak_aliases": [
+   "Ukrainian",
+   "ukrainien",
+   "ukrainienne",
+   "ukrainiens",
+   "ukrainiennes",
+   "ucraniano",
+   "ucraniana",
+   "ucranianos",
+   "ucranianas",
+   "الأوكراني"
+  ]
+ },
+ {
+  "name": "United Arab Emirates",
+  "iso3": "ARE",
+  "aliases": [
+   "United Arab Emirates",
+   "UAE",
+   "Émirats arabes unis",
+   "Emiratos Árabes Unidos",
+   "الإمارات العربية المتحدة",
+   "الإمارات"
+  ],
+  "weak_aliases": [
+   "Emirati"
+  ]
+ },
+ {
+  "name": "United Kingdom",
+  "iso3": "GBR",
+  "aliases": [
+   "United Kingdom",
+   "UK",
+   "U.K.",
+   "Great Britain",
+   "Britain",
+   "England",
+   "Scotland",
+   "Wales",
+   "Northern Ireland",
+   "Royaume-Uni",
+   "Reino Unido",
+   "Angleterre",
+   "Inglaterra",
+   "المملكة المتحدة",
+   "بريطانيا"
+  ],
+  "weak_aliases": [
+   "British",
+   "britannique",
+   "britanniques",
+   "británico",
+   "británica",
+   "británicos",
+   "británicas",
+   "البريطاني"
+  ]
+ },
+ {
+  "name": "United States",
+  "iso3": "USA",
+  "aliases": [
+   "United States",
+   "United States of America",
+   "USA",
+   "U.S.A.",
+   "U.S.",
+   "États-Unis",
+   "Estados Unidos",
+   "EE.UU.",
+   "EEUU",
+   "الولايات المتحدة",
+   "الولايات المتحدة الأمريكية"
+  ],
+  "weak_aliases": [
+   "American",
+   "américain",
+   "américaine",
+   "américains",
+   "américaines",
+   "estadounidense",
+   "estadounidenses",
+   "أمريكا",
+   "الأمريكي",
+   "الأمريكية"
+  ]
+ },
+ {
+  "name": "Uruguay",
+  "iso3": "URY",
+  "aliases": [
+   "Uruguay",
+   "الأوروغواي",
+   "أوروغواي"
+  ],
+  "weak_aliases": [
+   "Uruguayan"
+  ]
+ },
+ {
+  "name": "Uzbekistan",
+  "iso3": "UZB",
+  "aliases": [
+   "Uzbekistan",
+   "Ouzbékistan",
+   "Uzbekistán",
+   "أوزبكستان",
+   "Karakalpakstan"
+  ],
+  "weak_aliases": [
+   "Uzbek",
+   "ouzbek",
+   "ouzbeke",
+   "ouzbeks",
+   "ouzbekes"
+  ]
+ },
+ {
+  "name": "Vanuatu",
+  "iso3": "VUT",
+  "aliases": [
+   "Vanuatu",
+   "فانواتو"
+  ]
+ },
+ {
+  "name": "Vatican City",
+  "iso3": "VAT",
+  "aliases": [
+   "Vatican City",
+   "Holy See",
+   "Vatican",
+   "Cité du Vatican",
+   "Santa Sede",
+   "الفاتيكان"
+  ]
+ },
+ {
+  "name": "Venezuela",
+  "iso3": "VEN",
+  "aliases": [
+   "Venezuela",
+   "Bolivarian Republic of Venezuela",
+   "فنزويلا"
+  ],
+  "weak_aliases": [
+   "Venezuelan",
+   "vénézuélien",
+   "vénézuélienne",
+   "vénézuéliens",
+   "vénézuéliennes",
+   "venezolano",
+   "venezolana",
+   "venezolanos",
+   "venezolanas",
+   "الفنزويلي"
+  ]
+ },
+ {
+  "name": "Vietnam",
+  "iso3": "VNM",
+  "aliases": [
+   "Vietnam",
+   "Viet Nam",
+   "Viêt Nam",
+   "فيتنام"
+  ],
+  "weak_aliases": [
+   "Vietnamese",
+   "vietnamien",
+   "vietnamienne",
+   "vietnamiens",
+   "vietnamiennes",
+   "vietnamita",
+   "vietnamitae",
+   "vietnamitas",
+   "vietnamitaes"
+  ]
+ },
+ {
+  "name": "Yemen",
+  "iso3": "YEM",
+  "aliases": [
+   "Yemen",
+   "Yémen",
+   "اليمن",
+   "Hodeidah",
+   "Hudaydah",
+   "الحديدة",
+   "Sana'a",
+   "Sanaa",
+   "صنعاء",
+   "Taiz",
+   "تعز"
+  ],
+  "weak_aliases": [
+   "Yemeni",
+   "yéménite",
+   "yéménites",
+   "yemení",
+   "yemeníes",
+   "اليمني",
+   "اليمنيين"
+  ]
+ },
+ {
+  "name": "Zambia",
+  "iso3": "ZMB",
+  "aliases": [
+   "Zambia",
+   "Zambie",
+   "زامبيا"
+  ],
+  "weak_aliases": [
+   "Zambian",
+   "zambien",
+   "zambienne",
+   "zambiens",
+   "zambiennes"
+  ]
+ },
+ {
+  "name": "Zimbabwe",
+  "iso3": "ZWE",
+  "aliases": [
+   "Zimbabwe",
+   "زيمبابوي"
+  ],
+  "weak_aliases": [
+   "Zimbabwean",
+   "zimbabwéen",
+   "zimbabwéenne",
+   "zimbabwéens",
+   "zimbabwéennes"
+  ]
+ },
+ {
+  "name": "Palestine",
+  "iso3": "PSE",
+  "aliases": [
+   "Palestine",
+   "State of Palestine",
+   "Palestinian territories",
+   "Palestinian Territory",
+   "Occupied Palestinian Territory",
+   "Occupied Palestinian Territories",
+   "Gaza",
+   "Gaza Strip",
+   "West Bank",
+   "Cisjordanie",
+   "Bande de Gaza",
+   "Territoires palestiniens",
+   "Palestina",
+   "Franja de Gaza",
+   "Cisjordania",
+   "فلسطين",
+   "غزة",
+   "قطاع غزة",
+   "الضفة الغربية",
+   "Jenin",
+   "Jénine",
+   "Hebron",
+   "Hébron",
+   "Nablus",
+   "Naplouse",
+   "نابلس",
+   "Tulkarem",
+   "Tulkarm",
+   "طولكرم",
+   "Khan Younis",
+   "Khan Yunis",
+   "خان يونس"
+  ],
+  "weak_aliases": [
+   "Palestinian",
+   "palestinien",
+   "palestinienne",
+   "palestiniens",
+   "palestiniennes",
+   "palestino",
+   "palestina",
+   "palestinos",
+   "palestinas",
+   "الفلسطيني",
+   "الفلسطينية",
+   "الفلسطينيين"
+  ]
+ },
+ {
+  "name": "Kosovo",
+  "iso3": "XKX",
+  "aliases": [
+   "Kosovo",
+   "Kosova",
+   "كوسوفو"
+  ],
+  "weak_aliases": [
+   "Kosovar"
+  ]
+ },
+ {
+  "name": "Western Sahara",
+  "iso3": "ESH",
+  "aliases": [
+   "Western Sahara",
+   "Sahara occidental",
+   "الصحراء الغربية"
+  ],
+  "weak_aliases": [
+   "Sahrawi",
+   "sahraoui",
+   "sahraouie",
+   "sahraouis",
+   "sahraouies",
+   "saharaui",
+   "saharauie",
+   "saharauis",
+   "saharauies"
+  ]
+ }
+]

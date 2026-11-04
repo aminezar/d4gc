@@ -1,0 +1,36 @@
+{
+  "notice": "Original fictional examples created for this repository. Not MSF documents or operational guidance. Released under the repository's MIT license.",
+  "documents": [
+    {
+      "id": "demo-cod-water", "title": "DR Congo: water container labels", "genre": "Demo logistics note", "language": "en", "year": 2026, "countries": ["DR Congo"], "crisis": ["water-sanitation"],
+      "text": "Fictional training example. Water containers in the demonstration store have a label with the container number, filling date, and storage location. The example inventory uses blue labels for full containers and a written status for accessibility. Record the container number in the handover notebook. This text demonstrates document retrieval; it is not water safety guidance."
+    },
+    {
+      "id": "demo-cod-handover", "title": "DR Congo : carnet de passation", "genre": "Demo logistics note", "language": "fr", "year": 2026, "countries": ["DR Congo"], "crisis": ["displacement"],
+      "text": "Exemple fictif pour la démonstration. Le carnet de passation contient la date, le nom de l'équipe et la liste des fournitures reçues. Chaque équipe note les fournitures manquantes sur une nouvelle ligne. Le carnet reste dans le bureau de démonstration. Ce texte sert uniquement à tester la recherche de documents."
+    },
+    {
+      "id": "demo-haiti-storage", "title": "Haiti: organising the demonstration store", "genre": "Demo logistics note", "language": "en", "year": 2025, "countries": ["Haiti"], "crisis": ["natural-disaster"],
+      "text": "Fictional training example. The demonstration store groups stationery by item name. Each shelf has a printed list of its contents. Record incoming notebooks and pencils in the example inventory before putting them on the shelf. The demonstration has no medical supplies and describes no real operation."
+    },
+    {
+      "id": "demo-haiti-inventory", "title": "Haití: inventario de cuadernos", "genre": "Demo logistics note", "language": "es", "year": 2026, "countries": ["Haiti"], "crisis": ["natural-disaster"],
+      "text": "Ejemplo ficticio de formación. El inventario de cuadernos registra la fecha de recepción, la cantidad y el número de estante. Una segunda persona comprueba la cantidad antes de cerrar el registro. Este documento solo demuestra la búsqueda y no describe una operación real."
+    },
+    {
+      "id": "demo-ssd-radio", "title": "South Sudan: demonstration radio log", "genre": "Demo logistics note", "language": "en", "year": 2026, "countries": ["South Sudan"], "crisis": ["displacement"],
+      "text": "Fictional training example. The demonstration radio log records the time, station name, and a short message summary. Mark practice messages as exercises. The example log does not contain frequencies, routes, personal information, or real security instructions."
+    },
+    {
+      "id": "demo-global-backup", "title": "Copying the example document bundle", "genre": "Demo reference", "language": "en", "year": 2026, "countries": [], "crisis": [],
+      "text": "Fictional training example. To copy the example document bundle, close the local program, copy the SQLite file to the demonstration USB drive, and compare the file size. Open the copied bundle with the local field program. Keep the original file until the demonstration copy has been checked."
+    },
+    {
+      "id": "demo-global-arabic", "title": "دفتر التدريب", "genre": "Demo reference", "language": "ar", "year": 2026, "countries": [], "crisis": [],
+      "text": "هذا مثال خيالي للتدريب فقط. يحتوي دفتر التدريب على تاريخ الجلسة وأسماء الملفات التجريبية. يكتب الفريق ملاحظة قصيرة بعد انتهاء التمرين. لا يصف هذا النص عملية حقيقية ولا يقدم إرشادات طبية."
+    },
+    {
+      "id": "demo-missing", "title": null, "genre": "Demo missing file", "language": "en", "year": null, "countries": [], "crisis": [], "text": null
+    }
+  ]
+}

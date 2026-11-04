@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Response Bundle · Brussels</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <div class="brand"><img src="/static/msf-logo.svg" alt="MSF"><small>Brussels</small></div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" data-view="coverage" aria-selected="true">Bundle</button>
+      <button role="tab" data-view="catalog" aria-selected="false">Catalog</button>
+      <button role="tab" data-view="gaps" aria-selected="false">Gaps <span class="n" id="gap-count">0</span></button>
+      <button role="tab" data-view="quality" aria-selected="false">Data quality</button>
+    </nav>
+    <div class="status"><span id="total"></span><span><span class="dot" id="net-dot"></span><span id="net-text"></span></span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="banner" id="banner" role="status" hidden></div>
+
+  <!-- Response: country, disaster, documents -->
+  <section class="view" id="view-coverage">
+    <div class="head">
+      <h1>Prepare a field bundle</h1>
+      <ol class="steps" id="steps">
+        <li><button class="step" type="button" data-step="1"><span class="n">1</span><span class="t">Country</span><span class="v" id="sv1">Where is the response?</span></button></li>
+        <li><button class="step" type="button" data-step="2"><span class="n">2</span><span class="t">Disaster</span><span class="v" id="sv2">What happened?</span></button></li>
+        <li><button class="step" type="button" data-step="3"><span class="n">3</span><span class="t">Documents</span><span class="v" id="sv3">Review and build</span></button></li>
+      </ol>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="stepbody" id="step1">
+      <div class="toolbar top"><div class="field"><span class="l">Country</span><div id="country-slot"></div></div></div>
+      <div class="split">
+        <div class="mapbox" id="mapbox">
+          <div id="map" aria-label="World map. Select a country."></div>
+          <div class="maptip" id="maptip" aria-hidden="true"></div>
+        </div>
+        <aside class="panel" id="country" aria-live="polite">
+          <div class="empty"><strong>No country selected</strong>Click a country on the map, or search for it above.</div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="stepbody" id="step2" hidden>
+      <h2>What kind of disaster?</h2>
+      <p class="muted" style="margin:var(--s1) 0 0">Choose one or more. Only documents about them go into the bundle.</p>
+      <div class="tiles" id="tiles"></div>
+      <div class="actions"><button class="ghost" type="button" id="back2">Back</button><button class="primary" type="button" id="next2" disabled>Show documents</button></div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="stepbody" id="step3" hidden>
+      <h2 id="s3-title"></h2>
+      <p class="muted" id="s3-sub" style="margin:var(--s1) 0 var(--s4)"></p>
+      <div class="panel" id="docs-panel" style="max-width:820px"></div>
+      <div class="actions"><button class="ghost" type="button" id="back3">Back</button></div>
+    </div>
+  </section>
+
+  <!-- Catalog -->
+  <section class="view" id="view-catalog" hidden>
+    <div class="head">
+      <h1>Catalog</h1>
+      <p class="lead">Every document in the collection with its tags. Replaces the Excel sheet.</p>
+      <div class="toolbar">
+        <div class="field"><label for="c-q">Title</label><input id="c-q" type="search" style="width:240px;height:44px;border-radius:10px"></div>
+        <div class="field"><span class="l">Country</span><div id="c-country-slot"></div></div>
+        <div class="field"><span class="l">Type</span><div id="c-genre-slot"></div></div>
+        <div class="field"><span class="l">Language</span><div id="c-lang-slot"></div></div>
+        <div class="field" id="c-crisis-field" hidden><span class="l">Crisis</span><div id="c-crisis-slot"></div></div>
+      </div>
+      <p class="muted" id="c-count"></p>
+    </div>
+    <div class="panel"><div class="scroll"><table>
+      <thead><tr><th>Document</th><th>Countries</th><th>Year</th><th>Lang.</th><th>Type</th><th>Crisis</th><th></th></tr></thead>
+      <tbody id="c-rows"></tbody></table></div></div>
+  </section>
+
+  <!-- Gaps -->
+  <section class="view" id="view-gaps" hidden>
+    <div class="head">
+      <h1>Gaps</h1>
+      <p class="lead">Questions the field bundle refused to answer. Each one is a document the collection is missing.</p>
+    </div>
+    <div class="panel" id="gap-box"></div>
+  </section>
+
+  <!-- Data quality -->
+  <section class="view" id="view-quality" hidden>
+    <div class="head">
+      <h1>Data quality</h1>
+      <p class="lead">What the pipeline found in the collection and what it set aside.</p>
+    </div>
+    <div class="panel" id="quality-box" style="max-width:720px"></div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+<script>
+/* Pipeline country names that differ from the map's names. */
+const TO_MAP = { "DR Congo": "Dem. Rep. Congo", "Palestine": "Palestine", "South Sudan": "S. Sudan",
+  "Central African Republic": "Central African Rep.", "Bosnia and Herzegovina": "Bosnia and Herz.", "Dominican Republic": "Dominican Rep.",
+  "Ivory Coast": "Côte d'Ivoire", "Czech Republic": "Czechia", "Congo": "Congo",
+  "United States": "United States of America", "Eswatini": "eSwatini" };
+const fromMap = Object.fromEntries(Object.entries(TO_MAP).map(([a, b]) => [b, a]));
+const pipelineName = (mapName) => fromMap[mapName] || mapName;
+
+let SELECTED = "", PICKED = new Set(), DOCSEL = new Set(), CUR = null, COUNTRIES = [], STEP = 1, REACHED = 1;
+const NS = "http://www.w3.org/2000/svg";
+
+initTabs((v) => { if (v === "gaps") loadGaps(); if (v === "quality") loadQuality(); if (v === "catalog") loadCatalog(); });
+initNet($("net-dot"), $("net-text"));
+
+/* ---- Steps ---- */
+let SAVED = null; try { SAVED = JSON.parse(sessionStorage.getItem("bundle-state")); } catch (e) {} // read before the first go() overwrites it
+const saveState = () => { try { sessionStorage.setItem("bundle-state", JSON.stringify({ SELECTED, PICKED: [...PICKED], DOCSEL: [...DOCSEL], STEP, REACHED })); } catch (e) {} };
+function go(n, push = true) {
+  STEP = n; REACHED = Math.max(REACHED, n);
+  if (push && !(history.state && history.state.step === n)) history.pushState({ step: n }, "");
+  [1, 2, 3].forEach((i) => { $("step" + i).hidden = i !== n; });
+  document.querySelectorAll(".step").forEach((b) => {
+    const i = +b.dataset.step;
+    b.toggleAttribute("aria-current", i === n); if (i === n) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
+    b.classList.toggle("done", i < n && ((i === 1 && SELECTED) || (i === 2 && PICKED.size)));
+    b.disabled = i > REACHED || (i > 1 && !SELECTED) || (i === 3 && !PICKED.size);
+    b.querySelector(".n").textContent = b.classList.contains("done") ? "\u2713" : i;
+  });
+  saveState();
+  $("sv1").textContent = SELECTED || "Where is the response?";
+  $("sv2").textContent = PICKED.size ? [...PICKED].map((t) => t === "*" ? "Any disaster" : crisisLabel(t)).join(", ") : "What happened?";
+}
+history.replaceState({ step: 1 }, "");
+// The browser's back button goes one step back, not out of the page.
+addEventListener("popstate", (e) => { const n = (e.state && e.state.step) || 1; go(n > 1 && !SELECTED ? 1 : n, false); });
+document.querySelectorAll(".step").forEach((b) => b.addEventListener("click", () => !b.disabled && go(+b.dataset.step)));
+$("back2").onclick = () => go(1); $("back3").onclick = () => go(2);
+$("next2").onclick = () => showDocs();
+
+/* ---- Country picker ---- */
+const countryBox = combobox({ label: "Search for a country", placeholder: "Search for a country", onSelect: (v) => select(v) });
+$("country-slot").append(countryBox.el);
+
+async function loadMap() {
+  const world = await api("/static/world.json");
+  COUNTRIES = world.countries.map((c) => pipelineName(c.name)).sort((a, b) => a.localeCompare(b)).map((n) => ({ value: n, text: n }));
+  countryBox.set(COUNTRIES);
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${world.width} ${world.height}`); svg.setAttribute("role", "group");
+  world.countries.forEach((c) => {
+    const p = document.createElementNS(NS, "path"), name = pipelineName(c.name);
+    p.setAttribute("d", c.d); p.dataset.name = name;
+    p.setAttribute("tabindex", "0"); p.setAttribute("role", "button"); p.setAttribute("aria-label", name);
+    svg.append(p);
+  });
+  const tip = $("maptip");
+  const showTip = (e) => { const n = e.target.dataset && e.target.dataset.name; if (n) { tip.textContent = n; tip.classList.add("on"); } };
+  svg.addEventListener("mouseover", showTip); svg.addEventListener("focusin", showTip);
+  svg.addEventListener("mouseleave", () => tip.classList.remove("on")); svg.addEventListener("focusout", () => tip.classList.remove("on"));
+  svg.addEventListener("click", (e) => { const n = e.target.dataset && e.target.dataset.name; if (n) select(n); });
+  svg.addEventListener("keydown", (e) => { if ((e.key === "Enter" || e.key === " ") && e.target.dataset.name) { e.preventDefault(); select(e.target.dataset.name); } });
+  $("map").replaceChildren(svg);
+}
+
+async function select(country) {
+  SELECTED = country; PICKED = new Set(); REACHED = 1;
+  document.querySelectorAll("#map path").forEach((p) => p.classList.toggle("sel", p.dataset.name === country));
+  countryBox.setText(country); go(1);
+  const panel = $("country");
+  panel.replaceChildren(el("div", { class: "empty", text: "Looking in the collection\u2026" }));
+  try { CUR = await api("/api/bundle/" + encodeURIComponent(country)); }
+  catch (e) { panel.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "Could not load " + country }), "Check that the server is running.")); return; }
+  if (!CUR.total) {
+    panel.replaceChildren(el("div", { class: "pickmsg none" }, el("h2", { text: country }),
+      el("p", { text: `Nothing in the collection for ${country}.` }),
+      el("p", { class: "muted", text: "Pick another country." })));
+    return;
+  }
+  panel.replaceChildren(el("div", { class: "pickmsg" }, el("h2", { text: country }),
+    el("p", { text: `${CUR.total} document${CUR.total === 1 ? "" : "s"} in the collection.` }),
+    el("button", { class: "primary", type: "button", onclick: () => { REACHED = 2; renderTiles(); go(2); } }, "Choose the disaster")));
+}
+
+/* ---- Step 2: disaster ---- */
+function renderTiles() {
+  const tile = (key, label, n) => el("button", { class: "tile", type: "button", "aria-pressed": PICKED.has(key), disabled: key !== "*" && !n,
+    onclick: () => {
+      if (key === "*") PICKED = PICKED.has("*") ? new Set() : new Set(["*"]);
+      else { PICKED.delete("*"); PICKED.has(key) ? PICKED.delete(key) : PICKED.add(key); }
+      renderTiles(); go(2);
+    } }, el("span", { text: label }), el("small", { text: key === "*" ? CUR.total + " documents" : n ? n + (n === 1 ? " document" : " documents") : "none" }));
+  $("tiles").replaceChildren(tile("*", "Any disaster", CUR.total),
+    ...Object.keys(CRISIS).map((k) => tile(k, crisisLabel(k), CUR.crises[k] || 0)));
+  $("next2").disabled = !PICKED.size; go(2);
+}
+
+/* ---- Step 3: documents ---- */
+async function showDocs() {
+  const wanted = PICKED.has("*") ? "" : [...PICKED].join(",");
+  CUR = await api("/api/bundle/" + encodeURIComponent(SELECTED) + (wanted ? "?crisis=" + encodeURIComponent(wanted) : ""));
+  const all = [...CUR.own, ...CUR.global]; DOCSEL = new Set(all.map((d) => d.id));
+  REACHED = 3;
+  const label = PICKED.has("*") ? "any disaster" : [...PICKED].map(crisisLabel).join(", ");
+  $("s3-title").textContent = `${SELECTED}: ${label}`;
+  $("s3-sub").textContent = `${CUR.own.length} document${CUR.own.length === 1 ? "" : "s"} about ${SELECTED}` + (CUR.global.length ? `, plus ${CUR.global.length} global guidance.` : ".") + " Untick what the team does not need.";
+  const group = (title, docs) => docs.length ? el("div", { class: "group" }, el("h3", {}, el("span", { text: title }), el("span", { text: docs.length })),
+    ...docs.map((d) => el("label", { class: "docrow" },
+      el("input", { type: "checkbox", checked: true, onchange: (e) => { e.target.checked ? DOCSEL.add(d.id) : DOCSEL.delete(d.id); updateBuild(); saveState(); } }),
+      el("div", {}, el("div", { class: "t", dir: "auto", text: d.title || d.id }), el("div", { class: "m", text: [d.genre, d.year, LANG[d.language]].filter(Boolean).join(" \u00B7 ") })),
+      d.can_open ? el("a", { class: "open sm", href: d.pdf ? "/api/doc/" + d.id + "/file" : "/doc/" + d.id, onclick: (e) => e.stopPropagation() }, d.pdf ? "Open PDF" : "Read") : null))) : null;
+  $("docs-panel").replaceChildren(
+    el("div", { class: "docs-scroll" }, group(`About ${SELECTED}`, CUR.own), group("Global guidance", CUR.global),
+      all.length ? null : el("div", { class: "empty" }, el("strong", { text: "No documents for this disaster" }), "Go back and choose another one.")),
+    el("div", { id: "result" }),
+    el("div", { class: "buildbar" }, el("span", { id: "build-info" }), el("button", { class: "primary", id: "build", type: "button", onclick: build }, "Build bundle")));
+  updateBuild(); go(3);
+}
+
+function updateBuild() {
+  const all = [...CUR.own, ...CUR.global].filter((d) => DOCSEL.has(d.id));
+  $("build-info").replaceChildren(el("b", { text: all.length + " documents" }), el("br"), el("span", { class: "muted", text: "about " + fmtSize(all.reduce((s, d) => s + d.bytes, 0)) }));
+  $("build").disabled = !all.length;
+}
+
+async function build() {
+  const btn = $("build"); btn.disabled = true; btn.textContent = "Building\u2026";
+  try {
+    const r = await fetch(`/api/bundle/${encodeURIComponent(SELECTED)}/build`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ doc_ids: [...DOCSEL] }) });
+    if (!r.ok) throw new Error(r.status);
+    const blob = await r.blob();
+    const filename = (r.headers.get("Content-Disposition") || "").match(/filename="([^"]+)"/)?.[1] || "country.sqlite";
+    if (window.bundleDownloadURL) URL.revokeObjectURL(window.bundleDownloadURL);
+    window.bundleDownloadURL = URL.createObjectURL(blob);
+    $("result").replaceChildren(el("div", { class: "note", role: "status" }, el("b", { text: `${r.headers.get("X-Document-Count")} documents, ${fmtSize(blob.size)}. ` }),
+      el("a", { href: window.bundleDownloadURL, download: filename, text: "Download bundle" }),
+      el("p", { text: "Copy the downloaded SQLite file to the field laptop, then run:" }),
+      el("code", { text: `uv run python app/server.py --bundle /path/to/${filename}` })));
+  } catch (e) {
+    $("result").replaceChildren(el("div", { class: "note error", role: "alert" }, "The bundle could not be built. Check the server log and try again."));
+  } finally { btn.disabled = false; btn.textContent = "Build bundle"; updateBuild(); }
+}
+
+/* ---- Catalog ---- */
+const cf = { country: "", genre: "", language: "", crisis: "" };
+const cCountry = combobox({ label: "Country", placeholder: "All countries", onSelect: (v) => { cf.country = v; loadCatalog(); }, onClear: () => { cf.country = ""; loadCatalog(); } });
+const cGenre = dropdown({ label: "Type", options: [{ value: "", text: "All types" }], onChange: (v) => { cf.genre = v; loadCatalog(); } });
+const cLang = dropdown({ label: "Language", options: [{ value: "", text: "All languages" }], onChange: (v) => { cf.language = v; loadCatalog(); } });
+const cCrisis = dropdown({ label: "Crisis", options: [{ value: "", text: "All crises" }], onChange: (v) => { cf.crisis = v; loadCatalog(); } });
+$("c-country-slot").append(cCountry.el); $("c-genre-slot").append(cGenre.el); $("c-lang-slot").append(cLang.el); $("c-crisis-slot").append(cCrisis.el);
+
+let catTimer, catFilled = false;
+$("c-q").addEventListener("input", () => { clearTimeout(catTimer); catTimer = setTimeout(loadCatalog, 200); });
+async function loadCatalog() {
+  const p = new URLSearchParams(); if ($("c-q").value.trim()) p.set("q", $("c-q").value.trim());
+  Object.entries(cf).forEach(([k, v]) => v && p.set(k, v));
+  const d = await api("/api/catalog?" + p).catch(() => null);
+  if (!d) { $("c-rows").replaceChildren(el("tr", {}, el("td", { colspan: 7, class: "muted", text: "Could not load the catalog." }))); return; }
+  if (!catFilled) {
+    cCountry.set(COUNTRIES);
+    cGenre.set([{ value: "", text: "All types" }, ...d.genres.map((g) => ({ value: g, text: g }))]);
+    cLang.set([{ value: "", text: "All languages" }, ...d.languages.map((l) => ({ value: l, text: LANG[l] || l }))]);
+    catFilled = true;
+  }
+  $("c-count").textContent = `${d.total} document${d.total === 1 ? "" : "s"}` + (d.total > d.documents.length ? ` (first ${d.documents.length} shown)` : "");
+  $("c-rows").replaceChildren(...(d.documents.length ? d.documents.map((x) => el("tr", {},
+    el("td", {}, el("span", { class: "trunc", dir: "auto", text: x.title || "(no file: " + x.id + ")" })), el("td", { text: x.countries.join(", ") || "Global" }),
+    el("td", { text: x.year || "" }), el("td", { text: LANG[x.language] || "" }), el("td", { text: x.genre || "" }), el("td", { text: x.crisis.map(crisisLabel).join(", ") }),
+    el("td", {}, x.can_open ? el("a", { class: "open sm", href: x.pdf ? "/api/doc/" + x.id + "/file" : "/doc/" + x.id }, x.pdf ? "Open PDF" : "Read") : null)))
+    : [el("tr", {}, el("td", { colspan: 7, class: "muted", text: "No document matches these filters." }))]));
+}
+
+/* ---- Gaps and quality ---- */
+async function loadGaps() {
+  const box = $("gap-box");
+  try {
+    const d = await api("/api/gaps");
+    $("gap-count").textContent = d.total;
+    box.replaceChildren(d.gaps.length
+      ? el("div", { class: "scroll" }, el("table", {}, el("thead", {}, el("tr", {}, el("th", { text: "Question" }), el("th", { class: "num", text: "Times asked" }), el("th", { text: "Last asked" }))),
+          el("tbody", {}, ...d.gaps.map((g) => el("tr", {}, el("td", { text: g.query }), el("td", { class: "num", text: g.count }), el("td", { text: g.ts.replace("T", " ").slice(0, 16) }))))))
+      : el("div", { class: "empty" }, el("strong", { text: "No gaps logged yet" }), "When a field search finds nothing, the question appears here."));
+  } catch (e) { box.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "Could not load gaps" }), "Reload the page.")); }
+}
+async function loadQuality() {
+  const box = $("quality-box");
+  try {
+    const d = await api("/api/quality");
+    const row = (k, v) => [el("dt", { text: k }), el("dd", { text: v })];
+    box.replaceChildren(el("dl", { class: "facts" },
+      ...row("Documents in the collection list", d.documents), ...row("With a file the app can search", d.with_file), ...row("Listed but no file", d.without_file),
+      ...row("No country found", d.no_country), ...row("No year found", d.no_year), ...row("No crisis tag", d.unsure_tags),
+      ...d.removed.flatMap((r) => row("Removed: " + r.reason, r.documents))));
+  } catch (e) { box.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "Could not load data quality" }), "Reload the page.")); }
+}
+
+async function restore() {
+  try {
+    const s = SAVED; if (!s || !s.SELECTED) return;
+    SELECTED = s.SELECTED; PICKED = new Set(s.PICKED); REACHED = s.REACHED;
+    document.querySelectorAll("#map path").forEach((p) => p.classList.toggle("sel", p.dataset.name === SELECTED));
+    countryBox.setText(SELECTED);
+    CUR = await api("/api/bundle/" + encodeURIComponent(SELECTED));
+    $("country").replaceChildren(el("div", { class: "pickmsg" }, el("h2", { text: SELECTED }),
+      el("p", { text: `${CUR.total} document${CUR.total === 1 ? "" : "s"} in the collection.` }),
+      el("button", { class: "primary", type: "button", onclick: () => { REACHED = Math.max(REACHED, 2); renderTiles(); go(2); } }, "Choose the disaster")));
+    if (s.STEP >= 2) renderTiles();
+    if (s.STEP === 3) { await showDocs(); DOCSEL = new Set(s.DOCSEL);
+      document.querySelectorAll(".docrow input").forEach((i, n) => {}); updateBuild();
+      const ids = [...CUR.own, ...CUR.global].map((d) => d.id);
+      document.querySelectorAll(".docrow input").forEach((box, n) => { box.checked = DOCSEL.has(ids[n]); }); updateBuild(); }
+    else go(s.STEP, false);
+    history.replaceState({ step: STEP }, "");
+  } catch (e) {}
+}
+
+(async () => {
+  await loadMap();
+  api("/api/meta").then((m) => {
+    const v = m.meta.valid_until;
+    $("total").textContent = [m.meta.doc_count && m.meta.doc_count + " documents", v && "Best before " + v].filter(Boolean).join(" \u00B7 ");
+    const days = v ? Math.floor((new Date(v) - Date.now()) / 864e5) : null;
+    if (days !== null && days < 30) {  // same best-before date the field page warns about
+      const b = $("banner"); b.hidden = false;
+      b.textContent = days < 0
+        ? `The collection is past its best-before date (${v}). Rebuild it with python -m pipeline.build so field bundles get the newest documents.`
+        : `The collection reaches its best-before date in ${days} day${days === 1 ? "" : "s"} (${v}). Rebuild it soon with python -m pipeline.build.`;
+    }
+  }).catch(() => {});
+  const c = await api("/api/crises").catch(() => ({ crises: [] }));
+  if (c.crises.length) {
+    const opts = [{ value: "", text: "All crises" }, ...c.crises.map((x) => ({ value: x.tag, text: crisisLabel(x.tag) }))];
+    cCrisis.set(opts); $("c-crisis-field").hidden = false;
+  }
+  go(1); loadGaps();
+  const nav = performance.getEntriesByType("navigation")[0];
+  if (nav && nav.type === "back_forward") await restore();
+})().catch(() => { $("map").replaceChildren(el("div", { class: "empty" }, el("strong", { text: "The map could not load" }), "Check that the server is running, then reload.")); });
+</script>
+</body>
+</html>

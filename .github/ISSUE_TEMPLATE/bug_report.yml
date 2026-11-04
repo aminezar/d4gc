@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible problem with the sample or code
+body:
+  - type: markdown
+    attributes:
+      value: Use the sample documents to reproduce the issue. Remove credentials and sensitive information from logs.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, uv version, and repository commit.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and exact command
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: Remove credentials and sensitive information.
+      render: text

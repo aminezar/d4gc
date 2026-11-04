@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Response Bundle · Field</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <div class="brand"><img src="/static/msf-logo.svg" alt="MSF"><small id="bundle-name">Field</small></div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" data-view="ask" aria-selected="true">Ask</button>
+      <button role="tab" data-view="gaps" aria-selected="false">Unanswered <span class="n" id="gap-count">0</span></button>
+    </nav>
+    <div class="status"><span id="built"></span><span><span class="dot" id="net-dot"></span><span id="net-text"></span></span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="banner" id="banner" role="status" hidden></div>
+
+  <section class="view" id="view-ask">
+    <div class="head">
+      <h1 id="title">Ask this bundle</h1>
+      <p class="lead">Find MSF documents in this bundle. If it holds nothing that fits, it says so.</p>
+      <form class="askform" id="form" role="search">
+        <input id="q" type="search" maxlength="2000" autocomplete="off" autofocus placeholder="Ask a question (EN, FR, ES, AR)" aria-label="Your question in English, French, Spanish or Arabic">
+        <button class="primary" id="go" type="submit">Search</button>
+      </form>
+      <div class="examples" id="examples"><span class="muted">Try:</span></div>
+    </div>
+    <section id="out" aria-live="polite"></section>
+  </section>
+
+  <section class="view" id="view-gaps" hidden>
+    <div class="head">
+      <h1>Unanswered</h1>
+      <p class="lead">Questions this bundle could not answer. They are saved on this laptop. Share the gap log with Brussels when connected.</p>
+    </div>
+    <div class="panel" id="gap-box"></div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+<script>
+let COUNTRY = "";
+initTabs((v) => { if (v === "gaps") loadGaps(); });
+initNet($("net-dot"), $("net-text"));
+
+const meta = (d) => [d.genre, d.year, LANG[d.language] || (d.language || "").toUpperCase()].filter(Boolean).join(" · ");
+function source(d) {
+  if (!d.countries || !d.countries.length) return "Global guidance";
+  return COUNTRY && d.countries.includes(COUNTRY) ? COUNTRY : d.countries[0];
+}
+
+function docItem(r, i) {
+  const own = COUNTRY && (r.countries || []).includes(COUNTRY);
+  const p = r.passage ? el("p", { class: "passage clamp", dir: r.language === "ar" ? "rtl" : "ltr", lang: r.language || "en", text: reflow(r.passage) }) : null;
+  const more = p ? el("button", { class: "link", type: "button", onclick: () => {
+    p.classList.toggle("clamp"); more.textContent = p.classList.contains("clamp") ? "Show full passage" : "Show less"; } }, "Show full passage") : null;
+  return el("article", { class: "docitem" },
+    el("div", { class: "no", text: String(i + 1) }),
+    el("div", {},
+      el("div", { class: "title", dir: "auto", text: r.title || r.doc_id }),
+      el("div", { class: "src" },
+        el("span", { class: "badge" + (own ? " own" : ""), text: source(r) }),
+        el("span", { text: meta(r) }), el("span", { text: r.doc_id }),
+        r.score == null ? null : r.borderline
+          ? el("span", { class: "badge borderline", title: `Match score ${r.score}: in the zone where the test set had both right and wrong answers. Check the passage.`, text: "Borderline match" })
+          : el("span", { class: "badge exact", title: `Match score ${r.score}`, text: "Strong match" })),
+      p, more),
+    r.can_open ? el("a", { class: "open", href: r.pdf ? "/api/doc/" + r.doc_id + "/file" : "/doc/" + r.doc_id }, r.pdf ? "Open PDF" : "Read") : null);
+}
+
+const out = (...n) => $("out").replaceChildren(...n);
+
+function render(q, data) {
+  if (data.refused) {
+    out(el("div", { class: "refusal", role: "alert" },
+      el("h2", { text: "Not in this collection" }),
+      el("p", { class: "q", text: "\u201C" + q + "\u201D" }),
+      el("p", { text: "No document in this bundle fits that question, so nothing is shown rather than a guess." }),
+      el("p", { text: GAP_LOGGING ? "The question is saved under Unanswered on this laptop. Share the gap log with Brussels when connected." : "Question logging is disabled on this server." })));
+  } else {
+    out(el("div", { class: "results" },
+      el("div", { class: "count" }, el("h2", { text: `${data.results.length} document${data.results.length === 1 ? "" : "s"}` }),
+        el("span", { class: "muted", text: data.engine === "hybrid" ? "Matched by meaning and keywords" : "Matched by keywords" })),
+      el("div", { class: "panel" }, ...data.results.map(docItem))));
+  }
+}
+
+async function ask(q) {
+  $("go").disabled = true;
+  out(el("div", { class: "results panel" }, el("div", { class: "skeleton" }), el("div", { class: "skeleton" })));
+  try {
+    const data = await api("/api/search", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query: q }) });
+    render(q, data);
+    try { sessionStorage.setItem("field-last", JSON.stringify({ q, data })); } catch (e) {}
+    if (data.refused) loadGaps();
+  } catch (e) {
+    out(el("div", { class: "refusal" }, el("h2", { text: "The search could not run" }),
+      el("p", { text: "The local server did not answer. Check that it is still running, then search again." })));
+  } finally { $("go").disabled = false; }
+}
+$("form").addEventListener("submit", (e) => { e.preventDefault(); const q = $("q").value.trim(); if (q) ask(q); });
+
+function setExamples(questions) {
+  questions.forEach((t) => $("examples").append(el("button", { type: "button", onclick: () => { $("q").value = t; ask(t); } }, t)));
+}
+let GAP_LOGGING = true;
+
+async function loadGaps() {
+  const box = $("gap-box");
+  try {
+    const d = await api("/api/gaps");
+    $("gap-count").textContent = d.gaps.length;
+    box.replaceChildren(d.gaps.length
+      ? el("table", {}, el("thead", {}, el("tr", {}, el("th", { text: "Question" }), el("th", { class: "num", text: "Asked" }), el("th", { text: "Last time" }))),
+          el("tbody", {}, ...d.gaps.map((g) => el("tr", {}, el("td", { text: g.query }), el("td", { class: "num", text: g.count }), el("td", { text: g.ts.replace("T", " ").slice(0, 16) })))))
+      : el("div", { class: "empty" }, el("strong", { text: "Nothing unanswered yet" }), "Questions the bundle cannot answer will be listed here."));
+  } catch (e) { box.replaceChildren(el("div", { class: "empty" }, el("strong", { text: "Could not load the list" }), "Reload the page.")); }
+}
+
+(async () => {
+  const m = await api("/api/meta");
+  GAP_LOGGING = m.gap_logging !== false;
+  setExamples(m.meta.demo === "true" ? ["How are water containers labelled?", "Que contient le carnet de passation ?"] : ["How do I treat cholera in children?", "Traitement de la malnutrition aiguë"]);
+  COUNTRY = m.meta.country || "";
+  $("bundle-name").textContent = "Field" + (COUNTRY ? " · " + COUNTRY : "");
+  if (COUNTRY) $("title").textContent = "Ask the " + COUNTRY + " bundle";
+  if (m.meta.created) {
+    const d = Math.floor((Date.now() - new Date(m.meta.created).getTime()) / 864e5);
+    $("built").textContent = (d === 0 ? "Built today" : `Built ${d} day${d === 1 ? "" : "s"} ago`) + " · " + fmtSize(m.size_bytes);
+  }
+  if (m.meta.valid_until && new Date(m.meta.valid_until) < new Date()) {
+    const b = $("banner"); b.hidden = false;
+    b.textContent = `This bundle is past its best-before date (${m.meta.valid_until}). Newer documents may exist. Ask Brussels for a fresh bundle when you are online.`;
+  }
+  if (m.meta.demo === "true") {
+    const b = $("banner"); b.hidden = false;
+    b.textContent = "Demo: original fictional documents. " + (m.meta.model === "demo-keyword-only" ? "Keyword search; the Qwen model is not loaded. " : "Hybrid search. ") + "Not medical or operational guidance.";
+    document.querySelector(".lead").textContent = "Search the original sample documents and inspect the matching passage.";
+  }
+  loadGaps();
+  // Coming back from a document with the Back button: show the same answer again, without searching (or logging a gap) twice.
+  const nav = performance.getEntriesByType("navigation")[0];
+  if (nav && nav.type === "back_forward") {
+    try { const last = JSON.parse(sessionStorage.getItem("field-last")); if (last) { $("q").value = last.q; render(last.q, last.data); } } catch (e) {}
+  }
+})().catch(() => out(el("div", { class: "refusal" }, el("h2", { text: "Bundle not loaded" }), el("p", { text: "The local server did not answer. Restart it and reload." }))));
+</script>
+</body>
+</html>

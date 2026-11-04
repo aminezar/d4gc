@@ -1,0 +1,28 @@
+[project]
+name = "msf-bundle"
+version = "0.1.0"
+description = "Offline document retrieval bundles for MSF field teams"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "sentence-transformers>=3.3",
+    "transformers>=4.51",
+    "torch>=2.2",
+    "fastapi>=0.162.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.optional-dependencies]
+tagging = [
+    "anthropic>=2.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

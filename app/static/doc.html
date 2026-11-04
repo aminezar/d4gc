@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document · Response Bundle</title>
+<link rel="stylesheet" href="/static/app.css">
+<style>
+  .reader { max-width: 760px; margin: 0 auto; padding: var(--s6) var(--s4) var(--s7); }
+  .reader h1 { font-size: 28px; line-height: 1.25; margin-bottom: var(--s3); }
+  .reader .meta { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s3); color: var(--muted); font-size: 14.5px; align-items: center; }
+  .reader .body { margin-top: var(--s5); padding-top: var(--s5); border-top: 1px solid var(--line); }
+  .reader .body p { margin: 0 0 var(--s4); font-size: 18px; line-height: 1.7; max-width: 68ch; color: var(--ink); }
+  .reader .body h2 { font-size: 21px; margin: var(--s6) 0 var(--s3); }
+  .reader .actions { margin: var(--s4) 0 0; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <div class="brand"><img src="/static/msf-logo.svg" alt="MSF"><small>Document</small></div>
+    <div class="tabs"></div>
+    <div class="status"><button class="ghost" type="button" onclick="history.length > 1 ? history.back() : location.assign('/')" style="height:34px;background:transparent;color:#fff;border-color:rgb(255 255 255 / .6)">Back</button></div>
+  </div>
+</header>
+<main class="reader" id="reader"><p class="muted">Loading…</p></main>
+<script src="/static/app.js"></script>
+<script>
+(async () => {
+  const id = location.pathname.split("/").pop();
+  const box = $("reader");
+  try {
+    const d = await api("/api/doc/" + encodeURIComponent(id));
+    document.title = (d.title || id) + " \u00B7 Response Bundle";
+    // PDF text keeps the printed line breaks: join single breaks, keep blank-line paragraphs, drop "|" paragraph marks.
+    const paras = d.text.replace(/^\s*\|\s?/gm, "").split(/\n\s*\n/).map((p) => p.replace(/\s*\n\s*/g, " ").trim()).filter(Boolean);
+    box.replaceChildren(
+      el("h1", { dir: "auto", text: d.title || id }),
+      el("div", { class: "meta" }, el("span", { text: [d.genre, d.year, LANG[d.language]].filter(Boolean).join(" \u00B7 ") }),
+        el("span", { text: d.countries.join(", ") || "Global guidance" }), el("span", { text: d.id })),
+      ...(d.pdf ? [el("p", { class: "actions" }, el("a", { class: "open", href: "/api/doc/" + id + "/file" }, "Open original PDF"))] : []),
+      el("div", { class: "body" }, ...paras.map((p) => { const m = p.match(/^#{1,4}\s+(.*)$/);
+        return m ? el("h2", { dir: "auto", text: m[1] }) : el("p", { dir: "auto", lang: d.language || "en", text: p }); })));
+  } catch (e) {
+    box.replaceChildren(el("h1", { text: "Document not found" }), el("p", { class: "muted", text: "It is not in this bundle." }));
+  }
+})();
+</script>
+</body>
+</html>
